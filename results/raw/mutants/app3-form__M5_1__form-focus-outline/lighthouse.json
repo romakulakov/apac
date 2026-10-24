@@ -1,0 +1,27 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app3-form__M5_1__form-focus-outline",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "formSubmitInvalid",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep2",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep3",
+      "violations": []
+    }
+  ]
+}

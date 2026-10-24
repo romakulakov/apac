@@ -1,0 +1,54 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Todos — Acme</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div id="main" tabindex="-1">
+    <img id="app-logo" src="logo.svg" alt="Acme Todos logo" width="36" height="36">
+    <h1 id="app-title">Todos</h1>
+    <div id="todo-status" role="status" aria-live="polite"></div>
+
+    <p class="new-row">
+      <label for="new-todo">What needs to be done?</label>
+      <input id="new-todo" type="text" autocomplete="off">
+      <button id="add-btn">Add task</button>
+    </p>
+
+    <p>
+      <!-- custom toggle-all control: state-sync host -->
+      <span id="toggle-all" role="checkbox" aria-checked="false" tabindex="0" aria-labelledby="toggle-all-label" class="toggle-all"></span>
+      <span id="toggle-all-label">Mark all as complete</span>
+    </p>
+
+    <h2 id="list-heading">Task list</h2>
+    <ul id="todo-list" aria-labelledby="list-heading"></ul>
+
+    <footer class="listbar">
+      <span id="count" aria-live="off">0 items left</span>
+      <nav aria-label="Filter tasks">
+        <a href="#/" data-filter="all" aria-current="true">All</a>
+        <a href="#/active" data-filter="active">Active</a>
+        <a href="#/completed" data-filter="completed">Completed</a>
+      </nav>
+      <button id="clear-completed">Clear completed</button>
+    </footer>
+  </div>
+
+  <template id="todo-item">
+    <li class="todo">
+      <input type="checkbox" class="toggle">
+      <label class="title"></label>
+      <button class="edit-btn">Edit</button>
+      <button class="destroy icon-btn" aria-label="Delete task"><span aria-hidden="true">✕</span></button>
+      <input type="text" class="edit-field" aria-label="Edit task title" hidden="">
+    </li>
+  </template>
+
+  <script src="app.js"></script>
+
+
+</body></html>

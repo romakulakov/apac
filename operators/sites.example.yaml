@@ -1,0 +1,7 @@
+# Copy to sites.yaml and extend. One entry = one mutant. Target >=5 sites per
+# operator where the corpus allows; report actual counts, never pad.
+- { op: "M2.2", seed: app1-apg-composition, site: hero-img,      mechanism: transform, file: src/pages/Home.jsx }
+- { op: "M2.2", seed: app2-todomvc,         site: logo-img,      mechanism: transform, file: src/App.jsx }
+- { op: "M4.5", seed: app1-apg-composition, site: settings-dlg,  mechanism: patch }
+- { op: "M4.4", seed: app1-apg-composition, site: settings-dlg,  mechanism: patch }
+- { op: "M6.2", seed: app4-dashboard,       site: router-shell,  mechanism: patch }

@@ -1,0 +1,51 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app3-form__M2_5__next-mismatch",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "label-content-name-mismatch",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "label-content-name-mismatch",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep2",
+      "violations": [
+        {
+          "ruleId": "label-content-name-mismatch",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep3",
+      "violations": [
+        {
+          "ruleId": "label-content-name-mismatch",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

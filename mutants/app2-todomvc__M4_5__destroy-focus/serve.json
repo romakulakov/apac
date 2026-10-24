@@ -1,0 +1,8 @@
+{
+  "pages": ["/"],
+  "staging": { "/": "todoAdd" },
+  "extra_scans": [
+    { "page": "/", "staging": "todoToggleAll" },
+    { "page": "/", "staging": "todoEdit" }
+  ]
+}

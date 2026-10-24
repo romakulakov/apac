@@ -1,0 +1,8 @@
+{
+  "pages": ["/"],
+  "staging": { "/": "formSubmitInvalid" },
+  "extra_scans": [
+    { "page": "/", "staging": "formGotoStep2" },
+    { "page": "/", "staging": "formGotoStep3" }
+  ]
+}

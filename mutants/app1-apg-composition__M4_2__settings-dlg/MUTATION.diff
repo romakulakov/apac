@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M4_2__settings-dlg/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M4_2__settings-dlg/dist/app.js	2026-07-12 01:24:16
+@@ -49,7 +49,6 @@
+   lastFocused = document.activeElement;
+   overlay.hidden = false;
+   setBackgroundInert(true);
+-  focusablesIn(dialog)[0].focus();                        // @mut:M4.2:settings-dlg
+   document.addEventListener("keydown", onDialogKeydown);
+ }
+ function closeDialog() {

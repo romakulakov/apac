@@ -1,0 +1,9 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M3_3__detail-ariahidden/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M3_3__detail-ariahidden/dist/app.js	2026-07-12 01:24:16
+@@ -190,5 +190,4 @@
+   const open = btn.getAttribute("aria-expanded") === "true";
+   btn.setAttribute("aria-expanded", String(!open));
+   panel.hidden = open;
+-  panel.setAttribute("aria-hidden", String(open));        // @mut:M3.3:detail-ariahidden
+ });

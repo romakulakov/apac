@@ -1,0 +1,37 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app4-dashboard__M3_1__adv-expanded",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": []
+    }
+  ]
+}

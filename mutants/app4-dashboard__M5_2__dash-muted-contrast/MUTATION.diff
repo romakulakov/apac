@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/styles.css mutants/app4-dashboard__M5_2__dash-muted-contrast/dist/styles.css
+--- seeds/app4-dashboard/dist/styles.css	2026-07-12 01:23:43
++++ mutants/app4-dashboard__M5_2__dash-muted-contrast/dist/styles.css	2026-07-12 01:24:18
+@@ -1,7 +1,7 @@
+ /* Metrics dashboard seed. Tagged lines = CSS mutation sites. */
+ :root {
+   --text: #16181d;
+-  --muted: #565b66;            /* @mut:M5.2:dash-muted-contrast */
++  --muted: #a8a8a8;            /* @mut:M5.2:dash-muted-contrast mutated */
+   --accent: #6d28d9;
+   --danger: #b3261e;
+ }

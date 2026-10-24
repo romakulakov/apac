@@ -1,0 +1,51 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app2-todomvc__M1_5__main-landmark",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

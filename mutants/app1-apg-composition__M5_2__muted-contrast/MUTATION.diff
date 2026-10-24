@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/styles.css mutants/app1-apg-composition__M5_2__muted-contrast/dist/styles.css
+--- seeds/app1-apg-composition/dist/styles.css	2026-07-12 01:16:08
++++ mutants/app1-apg-composition__M5_2__muted-contrast/dist/styles.css	2026-07-12 01:24:16
+@@ -3,7 +3,7 @@
+ 
+ :root {
+   --text: #1a1a1a;
+-  --muted: #595959;            /* @mut:M5.2:muted-contrast */
++  --muted: #a8a8a8;            /* @mut:M5.2:muted-contrast mutated */
+   --accent: #0b5fff;
+   --error: #b3261e;
+ }

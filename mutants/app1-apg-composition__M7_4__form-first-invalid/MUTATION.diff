@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M7_4__form-first-invalid/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M7_4__form-first-invalid/dist/app.js	2026-07-12 01:24:17
+@@ -156,7 +156,6 @@
+   setInvalid(email, !okEmail); if (!okEmail) bad.push(email);
+   if (bad.length) {
+     announce("form-status", `${bad.length} field(s) need attention.`);
+-    bad[0].focus();                                       // @mut:M7.4:form-first-invalid
+   } else {
+     form.reset();
+     $("#form-status").textContent = "Message sent. We will reply within two days.";

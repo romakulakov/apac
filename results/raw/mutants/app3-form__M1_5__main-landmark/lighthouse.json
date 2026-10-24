@@ -1,0 +1,51 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app3-form__M1_5__main-landmark",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep2",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep3",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

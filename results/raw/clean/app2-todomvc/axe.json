@@ -1,0 +1,27 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app2-todomvc",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": []
+    }
+  ]
+}

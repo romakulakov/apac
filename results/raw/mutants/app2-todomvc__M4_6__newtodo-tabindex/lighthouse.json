@@ -1,0 +1,59 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app2-todomvc__M4_6__newtodo-tabindex",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "tabindex",
+          "sc": [
+            "2.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "tabindex",
+          "sc": [
+            "2.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "tabindex",
+          "sc": [
+            "2.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "tabindex",
+          "sc": [
+            "2.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

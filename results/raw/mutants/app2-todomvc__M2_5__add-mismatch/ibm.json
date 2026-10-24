@@ -1,0 +1,71 @@
+{
+  "tool": "ibm",
+  "version": "4.0.26",
+  "target": "app2-todomvc__M2_5__add-mismatch",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "label_name_visible",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "label_name_visible",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "label_name_visible",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "label_name_visible",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "tool": "ibm",
+  "version": "4.0.26",
+  "target": "app4-dashboard__M4_8__toolbar-arrows",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [
+            "1.3.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [
+            "1.3.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [
+            "1.3.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [
+            "1.3.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [
+            "1.3.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [
+            "1.3.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M4_1__like-key/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M4_1__like-key/dist/app.js	2026-07-12 01:24:16
+@@ -110,9 +110,6 @@
+   like.setAttribute("aria-pressed", String(like.getAttribute("aria-pressed") !== "true"));
+ }
+ like.addEventListener("click", toggleLike);
+-like.addEventListener("keydown", e => {                   // @mut:M4.1:like-key
+-  if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggleLike(); } // @mut:M4.1:like-key
+-});                                                       // @mut:M4.1:like-key
+ 
+ /* ---------------- hover/focus card (SC 1.4.13) ---------------- */
+ const term = $("#term"), card = $("#hovercard");

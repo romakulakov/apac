@@ -1,0 +1,37 @@
+{
+  "tool": "qualweb",
+  "version": "0.8.11",
+  "target": "app4-dashboard__M4_8__toolbar-arrows",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": []
+    }
+  ]
+}

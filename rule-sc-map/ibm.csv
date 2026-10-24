@@ -1,0 +1,26 @@
+ruleId,scs
+img_alt_valid,1.1.1
+input_label_exists,4.1.2;1.3.1;3.3.2
+label_ref_valid,1.3.1;4.1.2
+label_name_visible,2.5.3
+text_contrast_sufficient,1.4.3
+aria_attribute_valid,4.1.2
+aria_child_tabbable,4.1.2;2.1.1
+aria_content_in_landmark,1.3.1
+aria_id_unique,4.1.2
+# IBM Equal Access rule -> WCAG SC. Rows = the 9 rules actually emitted
+# across the 119-mutant run + clean run (2026-07-11); IBM does not embed SC
+# in scan output, so this CSV supplies the strict-regime mapping.
+# Primary SC first; secondary SCs the rule also claims joined by ';'.
+# Basis: IBM Equal Access WCAG 2.1 ruleset; per-rule help pages at
+#   able.ibm.com/rules/archives/2026.05.19/doc/en-US/<ruleId>.html
+#   (the archive version pinned in this run's report `help` URLs).
+# NOTES / caveats for the text:
+# - aria_content_in_landmark (1.3.1): dominant volume but a dispositioned
+#   FALSE POSITIVE (skip link); differenced out by the clean baseline, so
+#   its SC mapping does not affect recall either way.
+# - aria_id_unique: WCAG 2.1 tied this to 4.1.1 (Parsing), REMOVED in
+#   WCAG 2.2; mapped here to 4.1.2 (the ARIA-reference integrity angle,
+#   which survives 2.2). Flag it if any mutant depends on it.
+# VERIFICATION: 20% hand-check against the help pages above still pending
+#   (pages are JS-rendered; open in a browser, not WebFetch).

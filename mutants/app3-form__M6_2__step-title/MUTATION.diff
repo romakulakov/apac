@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app3-form/dist/app.js mutants/app3-form__M6_2__step-title/dist/app.js
+--- seeds/app3-form/dist/app.js	2026-07-06 15:11:05
++++ mutants/app3-form__M6_2__step-title/dist/app.js	2026-07-12 01:24:17
+@@ -23,7 +23,6 @@
+   $("#next-btn").textContent = n === STEPS ? "Submit application" : "Continue";
+   hideErrors();
+   const fs = $(`#step-${n}`);
+-  document.title = fs.dataset.title;                      // @mut:M6.2:step-title
+   $(`#h-step-${n}`).focus();                              // @mut:M6.2:step-focus
+   if (n === 3) buildReview();
+ }
