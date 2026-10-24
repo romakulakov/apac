@@ -1,0 +1,211 @@
+{
+  "tool": "pa11y",
+  "version": "9.1.1",
+  "target": "app1-apg-composition__M6_1__load-announce",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

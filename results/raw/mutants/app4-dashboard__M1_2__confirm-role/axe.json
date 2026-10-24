@@ -1,0 +1,45 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app4-dashboard__M1_2__confirm-role",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": [
+        {
+          "ruleId": "aria-allowed-attr",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": []
+    }
+  ]
+}

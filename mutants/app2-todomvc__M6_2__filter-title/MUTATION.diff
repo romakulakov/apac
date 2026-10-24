@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app2-todomvc/dist/app.js mutants/app2-todomvc__M6_2__filter-title/dist/app.js
+--- seeds/app2-todomvc/dist/app.js	2026-07-11 20:40:34
++++ mutants/app2-todomvc__M6_2__filter-title/dist/app.js	2026-07-12 01:24:17
+@@ -144,7 +144,6 @@
+     a.dataset.filter === filter
+       ? a.setAttribute("aria-current", "true")
+       : a.removeAttribute("aria-current"));
+-  document.title = `Todos — ${filter[0].toUpperCase()}${filter.slice(1)}`; // @mut:M6.2:filter-title
+   render();
+ }
+ applyFilter();

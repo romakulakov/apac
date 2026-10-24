@@ -1,0 +1,10 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M3_1__adv-expanded/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M3_1__adv-expanded/dist/app.js	2026-07-12 01:24:18
+@@ -164,6 +164,5 @@
+   const btn = e.currentTarget, panel = $("#adv-panel");
+   const open = !panel.hidden;
+   panel.hidden = open;
+-  btn.setAttribute("aria-expanded", String(!open));       // @mut:M3.1:adv-expanded
+   panel.setAttribute("aria-hidden", String(open));        // @mut:M3.3:adv-ariahidden
+ });

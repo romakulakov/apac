@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app3-form/dist/app.js mutants/app3-form__M7_4__summary-links/dist/app.js
+--- seeds/app3-form/dist/app.js	2026-07-06 15:11:05
++++ mutants/app3-form__M7_4__summary-links/dist/app.js	2026-07-12 01:24:18
+@@ -65,7 +65,6 @@
+     const a = document.createElement("a");
+     a.href = "#" + el.id;
+     a.textContent = $(`label[for="${el.id}"]`).textContent + " — needs attention";
+-    a.addEventListener("click", ev => { ev.preventDefault(); el.focus(); }); // @mut:M7.4:summary-links
+     li.append(a); list.append(li);
+   }
+   $("#error-summary").hidden = false;

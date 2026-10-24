@@ -1,0 +1,85 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app4-dashboard__M2_2__brand-alt",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

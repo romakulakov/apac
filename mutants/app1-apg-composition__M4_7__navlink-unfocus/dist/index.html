@@ -1,0 +1,171 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Acme Tasks — Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <img id="logo" src="logo.svg" alt="Acme Tasks logo" width="40" height="40">
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#/" data-route="">Home</a></li>
+        <li><a href="#/form" data-route="" tabindex="-1">Contact form</a></li>
+        <li><a href="#/dash" data-route="">Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+
+    <!-- ============ VIEW: HOME ============ -->
+    <section id="view-home" class="view" data-title="Acme Tasks — Home">
+      <h1>Welcome to Acme Tasks</h1>
+      <p>
+        A demonstration application composed from APG-style widgets.
+        <a id="report-link" href="#/dash">Read the quarterly accessibility report</a>.
+      </p>
+
+      <h2 id="tabs-heading">Project overview</h2>
+      <!-- APG Tabs with roving tabindex -->
+      <div class="tabs" id="tabs">
+        <div role="tablist" aria-labelledby="tabs-heading">
+          <button role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1" tabindex="0">Summary</button>
+          <button role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" tabindex="-1">Timeline</button>
+          <button role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" tabindex="-1">Team</button>
+        </div>
+        <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
+          <p>Three projects are on track this quarter.</p>
+        </div>
+        <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden="">
+          <p>Milestones are listed in the dashboard view.</p>
+        </div>
+        <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden="">
+          <p>Seven contributors across two teams.</p>
+        </div>
+      </div>
+
+      <h2 id="faq-heading">Frequently asked questions</h2>
+      <!-- APG Accordion (disclosure buttons) -->
+      <div class="accordion" id="faq">
+        <h3>
+          <button class="acc-trigger" aria-expanded="false" aria-controls="acc-1" id="acc-1-btn">
+            How do I create a task?
+          </button>
+        </h3>
+        <div id="acc-1" role="region" aria-labelledby="acc-1-btn" hidden="">
+          <p>Open the dashboard and choose “Load projects”, then add a task.</p>
+        </div>
+        <h3>
+          <button class="acc-trigger" aria-expanded="false" aria-controls="acc-2" id="acc-2-btn">
+            Can I export my data?
+          </button>
+        </h3>
+        <div id="acc-2" role="region" aria-labelledby="acc-2-btn" hidden="">
+          <p>Yes — exports are available from account settings.</p>
+        </div>
+      </div>
+
+      <h2>Preferences</h2>
+      <p>
+        <button id="open-settings" aria-haspopup="dialog">Open settings</button>
+        <!-- custom action implemented as button-like control: M1.1 host -->
+        <button id="like-btn" class="chip" aria-pressed="false">Like this app</button>
+      </p>
+
+      <!-- hover/focus card (SC 1.4.13 host) -->
+      <p>
+        Hover the term
+        <button type="button" id="term" class="term" aria-describedby="hovercard">WCAG</button>
+        to see a definition.
+      </p>
+      <div id="hovercard" role="tooltip" hidden="">
+        Web Content Accessibility Guidelines — dismiss with Escape.
+      </div>
+
+      <!-- auto-updating ticker (SC 2.2.2 host) -->
+      <div class="ticker-wrap">
+        <p id="ticker" aria-hidden="true">Tip 1 of 3: use landmarks.</p>
+        <button id="ticker-pause" aria-pressed="false">Pause tips</button>
+      </div>
+    </section>
+
+    <!-- ============ VIEW: FORM ============ -->
+    <section id="view-form" class="view" data-title="Acme Tasks — Contact form" hidden="">
+      <h1>Contact form</h1>
+      <form id="contact" novalidate="">
+        <div id="form-status" role="status" aria-live="polite"></div>
+
+        <p>
+          <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" autocomplete="name" required="" aria-required="true" aria-describedby="name-err">
+          <span id="name-err" class="error" hidden="">Enter your full name.</span>
+        </p>
+        <p>
+          <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required="" aria-required="true" aria-describedby="email-err">
+          <span id="email-err" class="error" hidden="">
+            <span class="err-icon" aria-hidden="true">⚠</span>
+            Enter a valid email address.
+          </span>
+        </p>
+        <p><button id="submit-btn" type="submit">Send message</button></p>
+      </form>
+    </section>
+
+    <!-- ============ VIEW: DASHBOARD ============ -->
+    <section id="view-dash" class="view" data-title="Acme Tasks — Dashboard" hidden="">
+      <h1>Dashboard</h1>
+      <p>
+        <button id="load-btn">Load projects</button>
+        <span id="load-result"></span>
+      </p>
+      <div id="dash-status" role="status" aria-live="polite"></div>
+
+      <h2>Projects</h2>
+      <ul id="project-list">
+        <li>Website relaunch</li>
+        <li>Mobile application</li>
+        <li>Design system</li>
+      </ul>
+
+      <h2>Notifications</h2>
+      <!-- custom checkbox (state-sync host, SC 4.1.2) -->
+      <div id="notif-toggle" role="checkbox" aria-checked="false" tabindex="0" aria-labelledby="notif-label"></div>
+      <span id="notif-label">Email me weekly summaries</span>
+
+      <h2>Details</h2>
+      <button id="reveal-btn" aria-expanded="false" aria-controls="detail-panel">
+        Show account details
+      </button>
+      <div id="detail-panel" aria-hidden="true" hidden="">
+        <p>Plan: Team. Seats: 7. Renewal: January.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ MODAL DIALOG (APG) ============ -->
+  <div id="overlay" class="overlay" hidden="">
+    <div id="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-title" class="dialog">
+      <h2 id="dlg-title">Settings</h2>
+      <p>
+        <label for="theme">Theme</label>
+        <select id="theme"><option>Light</option><option>Dark</option></select>
+      </p>
+      <p>
+        <button id="dlg-save">Save settings</button>
+        <button id="dlg-close" class="icon-btn" aria-label="Close settings"><span aria-hidden="true">✕</span></button>
+      </p>
+    </div>
+  </div>
+
+  <footer class="sticky-footer">
+    <p>© Acme Tasks — a benchmark seed application.</p>
+  </footer>
+
+  <script src="app.js"></script>
+
+
+</body></html>

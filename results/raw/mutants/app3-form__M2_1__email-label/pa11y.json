@@ -1,0 +1,59 @@
+{
+  "tool": "pa11y",
+  "version": "9.1.1",
+  "target": "app3-form__M2_1__email-label",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep2",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep3",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle4.Guideline4_1.4_1_2.H91.InputEmail.Name",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

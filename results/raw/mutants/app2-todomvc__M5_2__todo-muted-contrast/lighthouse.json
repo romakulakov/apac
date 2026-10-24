@@ -1,0 +1,59 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app2-todomvc__M5_2__todo-muted-contrast",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

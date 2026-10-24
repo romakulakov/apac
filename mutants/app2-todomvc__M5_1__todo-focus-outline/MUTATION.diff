@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app2-todomvc/dist/styles.css mutants/app2-todomvc__M5_1__todo-focus-outline/dist/styles.css
+--- seeds/app2-todomvc/dist/styles.css	2026-07-12 01:16:08
++++ mutants/app2-todomvc__M5_1__todo-focus-outline/dist/styles.css	2026-07-12 01:24:17
+@@ -8,7 +8,7 @@
+ * { box-sizing: border-box; }
+ body { font: 16px/1.5 system-ui, sans-serif; color: var(--text); margin: 0; }
+ main { max-width: 40rem; margin: 0 auto; padding: 1rem 1.25rem; }
+-:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; } /* @mut:M5.1:todo-focus-outline */
++:focus-visible { outline: none; } /* @mut:M5.1:todo-focus-outline mutated */
+ .skip-link { position: absolute; left: -999px; } .skip-link:focus { left: .5rem; }
+ .new-row { display: flex; gap: .5rem; align-items: center; flex-wrap: wrap; }
+ #new-todo { flex: 1; font: inherit; padding: .45rem; min-height: 24px; }

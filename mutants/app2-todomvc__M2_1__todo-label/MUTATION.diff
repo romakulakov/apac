@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app2-todomvc/dist/app.js mutants/app2-todomvc__M2_1__todo-label/dist/app.js
+--- seeds/app2-todomvc/dist/app.js	2026-07-11 20:40:34
++++ mutants/app2-todomvc__M2_1__todo-label/dist/app.js	2026-07-12 01:24:17
+@@ -28,7 +28,6 @@
+     const cb = $(".toggle", li), label = $(".title", li);
+     cb.id = "cb-" + t.id;
+     cb.checked = t.done;
+-    label.htmlFor = cb.id;                                // @mut:M2.1:todo-label
+     label.textContent = t.title;
+     li.classList.toggle("done", t.done);
+     list.append(li);

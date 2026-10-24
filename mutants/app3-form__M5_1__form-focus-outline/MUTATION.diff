@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app3-form/dist/styles.css mutants/app3-form__M5_1__form-focus-outline/dist/styles.css
+--- seeds/app3-form/dist/styles.css	2026-07-11 18:46:20
++++ mutants/app3-form__M5_1__form-focus-outline/dist/styles.css	2026-07-12 01:24:17
+@@ -10,7 +10,7 @@
+ header, main, footer { max-width: 44rem; margin: 0 auto; padding: 1rem 1.25rem; }
+ .brand { font-weight: 700; }
+ .muted, .hint { color: var(--muted); display: block; }
+-:focus-visible { outline: 3px solid #ffdd00; outline-offset: 0; box-shadow: 0 0 0 6px #0b0c0c22; } /* @mut:M5.1:form-focus-outline */
++:focus-visible { outline: none; } /* @mut:M5.1:form-focus-outline mutated */
+ .skip-link { position: absolute; left: -999px; } .skip-link:focus { left: .5rem; }
+ fieldset { border: 0; padding: 0; margin: 0 0 1rem; }
+ legend h1 { margin: .2rem 0 1rem; font-size: 1.6rem; }

@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app3-form/dist/app.js mutants/app3-form__M6_1__step-announce/dist/app.js
+--- seeds/app3-form/dist/app.js	2026-07-06 15:11:05
++++ mutants/app3-form__M6_1__step-announce/dist/app.js	2026-07-12 01:24:17
+@@ -97,7 +97,6 @@
+   collectStep(step);
+   if (step < STEPS) {
+     showStep(step + 1);
+-    announce(`Step ${step} of ${STEPS}.`);                // @mut:M6.1:step-announce
+   } else {
+     $("#wizard").hidden = true;
+     $("#progress").hidden = true;

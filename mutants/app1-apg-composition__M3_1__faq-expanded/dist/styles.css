@@ -1,0 +1,76 @@
+/* Acme Tasks seed styles. Lines tagged `/* @mut:<OP>:<site> *​/` are CSS
+   mutation sites (generator deletes or rewrites the tagged line). */
+
+:root {
+  --text: #1a1a1a;
+  --muted: #595959;            /* @mut:M5.2:muted-contrast */
+  --accent: #0b5fff;
+  --error: #b3261e;
+}
+
+* { box-sizing: border-box; }
+body {
+  font: 16px/1.5 system-ui, sans-serif;
+  color: var(--text);
+  margin: 0 0 4rem;
+}
+header, main, footer { padding: 1rem 1.25rem; max-width: 52rem; margin: 0 auto; }
+header { display: flex; align-items: center; gap: 1rem; }
+p, li { color: var(--text); }
+.muted, footer p { color: var(--muted); }
+
+/* --- focus visibility (SC 2.4.7) --- */
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; } /* @mut:M5.1:focus-outline */
+
+/* --- skip link --- */
+.skip-link { position: absolute; left: -999px; top: 0; background: #fff; padding: .5rem; }
+.skip-link:focus { left: .5rem; z-index: 10; }
+
+/* --- nav --- */
+.nav { display: flex; gap: 1rem; list-style: none; padding: 0; }
+
+/* --- controls: minimum target size (SC 2.5.8) --- */
+button, .chip, [role="checkbox"] {
+  min-width: 24px; min-height: 24px;   /* @mut:M5.3:target-size */
+  padding: .45rem .8rem;
+  font: inherit; cursor: pointer;
+  border: 1px solid #888; border-radius: 6px; background: #f6f6f6;
+}
+.icon-btn { padding: 2px; line-height: 1; }  /* min-size (tagged rule) is the sole 24px floor; M5.3 removes it → collapses both dims */
+
+/* --- tabs --- */
+[role="tablist"] { display: flex; gap: .25rem; border-bottom: 2px solid #ddd; }
+[role="tab"][tabindex="0"] { background: #fff; border-bottom: 3px solid var(--accent); font-weight: 600; }
+[role="tabpanel"] { padding: .75rem 0; }
+
+/* --- accordion --- */
+.acc-trigger { width: 100%; text-align: left; }
+
+/* --- custom checkbox --- */
+[role="checkbox"] { display: inline-block; width: 24px; height: 24px; vertical-align: middle; }
+[role="checkbox"].on { background: var(--accent); }
+
+/* --- form errors: color + icon + text (SC 1.4.1 handled in markup) --- */
+input { font: inherit; padding: .4rem; border: 1px solid #888; border-radius: 4px; min-height: 24px; }
+input.invalid { border-color: var(--error); border-width: 2px; }
+.error { color: var(--error); display: block; }
+.req { color: var(--error); }
+
+/* --- dialog --- */
+.overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45);
+           display: grid; place-items: center; }
+.overlay[hidden] { display: none; }
+.dialog { background: #fff; padding: 1.25rem 1.5rem; border-radius: 8px;
+          min-width: 20rem; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+
+/* --- hover card --- */
+.term { text-decoration: underline dotted; background: none; border: 0;
+        font: inherit; color: inherit; }
+#hovercard { position: absolute; background: #fff; border: 1px solid #888;
+             padding: .5rem .75rem; max-width: 22rem; border-radius: 6px; }
+
+/* --- footer: non-occluding by default (SC 2.4.11) --- */
+.sticky-footer {
+  position: static;            /* @mut:M5.4:footer-occlusion */
+  background: #f0f0f0;
+}

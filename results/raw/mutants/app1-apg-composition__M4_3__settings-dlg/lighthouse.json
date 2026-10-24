@@ -1,0 +1,37 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app1-apg-composition__M4_3__settings-dlg",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": []
+    }
+  ]
+}

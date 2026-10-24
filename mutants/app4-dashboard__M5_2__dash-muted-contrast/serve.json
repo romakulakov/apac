@@ -1,0 +1,10 @@
+{
+  "pages": ["/"],
+  "staging": { "/": "dashOpenConfirm" },
+  "extra_scans": [
+    { "page": "/", "staging": "dashRefresh" },
+    { "page": "/", "staging": "dashGotoProjects" },
+    { "page": "/", "staging": "dashSortTable" },
+    { "page": "/", "staging": "dashRevealAdvanced" }
+  ]
+}

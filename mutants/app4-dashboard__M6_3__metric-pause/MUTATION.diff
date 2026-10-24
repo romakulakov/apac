@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M6_3__metric-pause/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M6_3__metric-pause/dist/app.js	2026-07-12 01:24:18
+@@ -43,7 +43,6 @@
+ $("#metric-pause").addEventListener("click", e => {
+   const b = e.currentTarget, paused = b.getAttribute("aria-pressed") === "true";
+   if (paused) { liveTimer = setInterval(tickMetric, 4000); } // resume
+-  if (!paused) clearInterval(liveTimer);                  // @mut:M6.3:metric-pause
+   b.setAttribute("aria-pressed", String(!paused));
+   b.textContent = paused ? "Pause live metric" : "Resume live metric";
+ });

@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M4_8__tabs-arrows/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M4_8__tabs-arrows/dist/app.js	2026-07-12 01:24:16
+@@ -88,8 +88,6 @@
+ tablist.addEventListener("keydown", e => {
+   const i = tabs.indexOf(document.activeElement);
+   if (i < 0) return;
+-  if (e.key === "ArrowRight") selectTab(tabs[(i + 1) % tabs.length]);          // @mut:M4.8:tabs-arrows
+-  if (e.key === "ArrowLeft") selectTab(tabs[(i - 1 + tabs.length) % tabs.length]); // @mut:M4.8:tabs-arrows
+   if (e.key === "Home") selectTab(tabs[0]);
+   if (e.key === "End") selectTab(tabs[tabs.length - 1]);
+ });

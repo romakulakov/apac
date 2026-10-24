@@ -1,0 +1,131 @@
+# Full site list for seed app1-apg-composition (>=1 site per operator; extend
+# with app2-4 to reach >=5 per operator; report ACTUAL counts, never pad).
+# mech is inferred from mutate.mjs; file paths are relative to the mutant dir.
+
+- { op: "M1.1", seed: app1-apg-composition, site: like-btn,          file: dist/index.html, sel: "#like-btn" }
+- { op: "M1.2", seed: app1-apg-composition, site: dialog-role,       file: dist/index.html, sel: "#settings-dialog" }
+- { op: "M1.3", seed: app1-apg-composition, site: faq-heading,       file: dist/index.html, sel: "#faq-heading" }
+- { op: "M1.4", seed: app1-apg-composition, site: project-list,      file: dist/index.html, sel: "#project-list" }
+- { op: "M1.5", seed: app1-apg-composition, site: main-landmark,     file: dist/index.html }
+- { op: "M2.1", seed: app1-apg-composition, site: name-label,        file: dist/index.html, sel: 'label[for="name"]' }
+- { op: "M2.2", seed: app1-apg-composition, site: logo-alt,          file: dist/index.html, sel: "#logo" }
+- { op: "M2.3", seed: app1-apg-composition, site: logo-placeholder,  file: dist/index.html, sel: "#logo" }
+- { op: "M2.4", seed: app1-apg-composition, site: report-link,       file: dist/index.html, sel: "#report-link" }
+- { op: "M2.5", seed: app1-apg-composition, site: save-mismatch,     file: dist/index.html, sel: "#dlg-save" }
+- { op: "M2.6", seed: app1-apg-composition, site: close-unnamed,     file: dist/index.html, sel: "#dlg-close" }
+- { op: "M3.1", seed: app1-apg-composition, site: faq-expanded,      file: dist/app.js }
+- { op: "M3.2", seed: app1-apg-composition, site: notif-checked,     file: dist/app.js }
+- { op: "M3.2", seed: app1-apg-composition, site: tabs-selected,     file: dist/app.js }
+- { op: "M3.3", seed: app1-apg-composition, site: detail-ariahidden, file: dist/app.js }
+- { op: "M3.4", seed: app1-apg-composition, site: settings-dlg,      file: dist/app.js }
+- { op: "M4.1", seed: app1-apg-composition, site: like-key,          file: dist/app.js }
+- { op: "M4.2", seed: app1-apg-composition, site: settings-dlg,      file: dist/app.js }
+- { op: "M4.3", seed: app1-apg-composition, site: settings-dlg,      file: dist/app.js }
+- { op: "M4.4", seed: app1-apg-composition, site: settings-dlg,      file: dist/app.js }
+- { op: "M4.5", seed: app1-apg-composition, site: settings-dlg,      file: dist/app.js }
+- { op: "M4.6", seed: app1-apg-composition, site: email-tabindex,    file: dist/index.html, sel: "#email" }
+- { op: "M4.7", seed: app1-apg-composition, site: navlink-unfocus,   file: dist/index.html, sel: '.nav a[href="#/form"]' }
+- { op: "M4.8", seed: app1-apg-composition, site: tabs-arrows,       file: dist/app.js }
+- { op: "M5.1", seed: app1-apg-composition, site: focus-outline,     file: dist/styles.css }
+- { op: "M5.2", seed: app1-apg-composition, site: muted-contrast,    file: dist/styles.css }
+- { op: "M5.3", seed: app1-apg-composition, site: target-size,       file: dist/styles.css }
+- { op: "M5.4", seed: app1-apg-composition, site: footer-occlusion,  file: dist/styles.css }
+- { op: "M5.5", seed: app1-apg-composition, site: email-err-coloronly, file: dist/index.html, sel: "#email-err" }
+- { op: "M6.1", seed: app1-apg-composition, site: load-announce,     file: dist/app.js }
+- { op: "M6.2", seed: app1-apg-composition, site: router-title,     file: dist/app.js }
+- { op: "M6.2", seed: app1-apg-composition, site: router-focus,     file: dist/app.js }
+- { op: "M6.3", seed: app1-apg-composition, site: ticker-pause,     file: dist/app.js }
+- { op: "M6.4", seed: app1-apg-composition, site: hovercard-esc,    file: dist/app.js }
+- { op: "M7.1", seed: app1-apg-composition, site: email-describedby, file: dist/index.html, sel: "#email" }
+- { op: "M7.2", seed: app1-apg-composition, site: name-required,    file: dist/index.html, sel: "#name" }
+- { op: "M7.3", seed: app1-apg-composition, site: email-autocomplete, file: dist/index.html, sel: "#email" }
+- { op: "M7.4", seed: app1-apg-composition, site: form-first-invalid, file: dist/app.js }
+- { op: "M2.4", seed: app1-apg-composition, site: nav-dash,          file: dist/index.html, sel: '.nav a[href="#/dash"]' }
+- { op: "M5.5", seed: app1-apg-composition, site: name-err-coloronly, file: dist/index.html, sel: "#name-err" }
+
+# ==================== app2-todomvc ====================
+- { op: "M1.3", seed: app2-todomvc, site: list-heading,       file: dist/index.html, sel: "#list-heading" }
+- { op: "M1.4", seed: app2-todomvc, site: todo-list,          file: dist/index.html, sel: "#todo-list" }
+- { op: "M1.5", seed: app2-todomvc, site: main-landmark,      file: dist/index.html }
+- { op: "M2.1", seed: app2-todomvc, site: newtodo-label,      file: dist/index.html, sel: 'label[for="new-todo"]' }
+- { op: "M2.1", seed: app2-todomvc, site: todo-label,         file: dist/app.js, mech: js-tag }
+- { op: "M2.6", seed: app2-todomvc, site: destroy-unnamed,    file: dist/index.html, sel: ".destroy" }
+- { op: "M3.2", seed: app2-todomvc, site: toggleall-checked,  file: dist/app.js }
+- { op: "M4.1", seed: app2-todomvc, site: edit-commit,        file: dist/app.js }
+- { op: "M4.2", seed: app2-todomvc, site: edit-focus,         file: dist/app.js }
+- { op: "M4.5", seed: app2-todomvc, site: destroy-focus,      file: dist/app.js }
+- { op: "M4.6", seed: app2-todomvc, site: newtodo-tabindex,   file: dist/index.html, sel: "#new-todo" }
+- { op: "M4.7", seed: app2-todomvc, site: clear-unfocusable,  file: dist/index.html, sel: "#clear-completed" }
+- { op: "M5.1", seed: app2-todomvc, site: todo-focus-outline, file: dist/styles.css }
+- { op: "M5.2", seed: app2-todomvc, site: todo-muted-contrast, file: dist/styles.css }
+- { op: "M5.3", seed: app2-todomvc, site: todo-target-size,   file: dist/styles.css }
+- { op: "M6.1", seed: app2-todomvc, site: todo-add-announce,  file: dist/app.js }
+- { op: "M6.2", seed: app2-todomvc, site: filter-title,       file: dist/app.js }
+- { op: "M1.1", seed: app2-todomvc, site: add-btn,            file: dist/index.html, sel: "#add-btn" }
+- { op: "M2.2", seed: app2-todomvc, site: app-logo-alt,       file: dist/index.html, sel: "#app-logo" }
+- { op: "M2.3", seed: app2-todomvc, site: app-logo-placeholder, file: dist/index.html, sel: "#app-logo" }
+- { op: "M2.4", seed: app2-todomvc, site: filter-completed,   file: dist/index.html, sel: 'a[data-filter="completed"]' }
+- { op: "M2.5", seed: app2-todomvc, site: add-mismatch,       file: dist/index.html, sel: "#add-btn" }
+- { op: "M4.1", seed: app2-todomvc, site: toggle-key,         file: dist/app.js }
+
+# ==================== app3-form ====================
+- { op: "M1.3", seed: app3-form, site: step1-heading,        file: dist/index.html, sel: "#h-step-1" }
+- { op: "M1.5", seed: app3-form, site: main-landmark,        file: dist/index.html }
+- { op: "M2.1", seed: app3-form, site: email-label,          file: dist/index.html, sel: 'label[for="email"]' }
+- { op: "M2.5", seed: app3-form, site: next-mismatch,        file: dist/index.html, sel: "#next-btn" }
+- { op: "M4.6", seed: app3-form, site: phone-tabindex,       file: dist/index.html, sel: "#phone" }
+- { op: "M5.1", seed: app3-form, site: form-focus-outline,   file: dist/styles.css }
+- { op: "M5.2", seed: app3-form, site: form-muted-contrast,  file: dist/styles.css }
+# M5.3 dropped for app3: form has only text buttons (stay >=24px) and a native
+# consent checkbox (UA-sized, 2.5.8-exempt) — no control collapses <24px, so no
+# valid mutant here. M5.3 = 3 sites (app1/app2/app4). Actual count, not padded.
+- { op: "M5.5", seed: app3-form, site: email-err-coloronly,  file: dist/index.html, sel: "#email-err" }
+- { op: "M6.1", seed: app3-form, site: step-announce,        file: dist/app.js }
+- { op: "M6.2", seed: app3-form, site: step-title,           file: dist/app.js }
+- { op: "M6.2", seed: app3-form, site: step-focus,           file: dist/app.js }
+- { op: "M7.1", seed: app3-form, site: fullname-describedby, file: dist/index.html, sel: "#full-name" }
+- { op: "M7.1", seed: app3-form, site: street-describedby,   file: dist/index.html, sel: "#street" }
+- { op: "M7.2", seed: app3-form, site: email-required,       file: dist/index.html, sel: "#email" }
+- { op: "M7.2", seed: app3-form, site: consent-required,     file: dist/index.html, sel: "#consent" }
+- { op: "M7.3", seed: app3-form, site: name-autocomplete,    file: dist/index.html, sel: "#full-name" }
+- { op: "M7.3", seed: app3-form, site: postal-autocomplete,  file: dist/index.html, sel: "#postal" }
+- { op: "M7.4", seed: app3-form, site: summary-focus,        file: dist/app.js }
+- { op: "M7.4", seed: app3-form, site: summary-links,        file: dist/app.js }
+- { op: "M2.2", seed: app3-form, site: brand-logo-alt,       file: dist/index.html, sel: "#brand-logo" }
+- { op: "M2.3", seed: app3-form, site: brand-logo-placeholder, file: dist/index.html, sel: "#brand-logo" }
+- { op: "M4.7", seed: app3-form, site: next-unfocusable,     file: dist/index.html, sel: "#next-btn" }
+- { op: "M5.4", seed: app3-form, site: form-footer-occlusion, file: dist/styles.css }
+- { op: "M5.5", seed: app3-form, site: fullname-err-coloronly, file: dist/index.html, sel: "#full-name-err" }
+- { op: "M5.5", seed: app3-form, site: postal-err-coloronly, file: dist/index.html, sel: "#postal-err" }
+
+# ==================== app4-dashboard ====================
+- { op: "M1.1", seed: app4-dashboard, site: sort-btn,          file: dist/index.html, sel: '.sort[data-key="name"]' }
+- { op: "M1.2", seed: app4-dashboard, site: toolbar-role,      file: dist/index.html, sel: "#proj-toolbar" }
+- { op: "M1.2", seed: app4-dashboard, site: confirm-role,      file: dist/index.html, sel: "#confirm-dialog" }
+- { op: "M1.4", seed: app4-dashboard, site: kpi-list,          file: dist/index.html, sel: "#kpi-list" }
+- { op: "M1.5", seed: app4-dashboard, site: main-landmark,     file: dist/index.html }
+- { op: "M2.2", seed: app4-dashboard, site: brand-alt,         file: dist/index.html, sel: "#brand-img" }
+- { op: "M2.3", seed: app4-dashboard, site: brand-placeholder, file: dist/index.html, sel: "#brand-img" }
+- { op: "M2.6", seed: app4-dashboard, site: cancel-unnamed,    file: dist/index.html, sel: "#confirm-no" }
+- { op: "M3.1", seed: app4-dashboard, site: adv-expanded,      file: dist/app.js }
+- { op: "M3.2", seed: app4-dashboard, site: table-ariasort,    file: dist/app.js }
+- { op: "M3.3", seed: app4-dashboard, site: adv-ariahidden,    file: dist/app.js }
+- { op: "M3.4", seed: app4-dashboard, site: confirm-dlg,       file: dist/app.js }
+- { op: "M4.2", seed: app4-dashboard, site: confirm-dlg,       file: dist/app.js }
+- { op: "M4.3", seed: app4-dashboard, site: confirm-dlg,       file: dist/app.js }
+- { op: "M4.4", seed: app4-dashboard, site: confirm-dlg,       file: dist/app.js }
+- { op: "M4.5", seed: app4-dashboard, site: confirm-dlg,       file: dist/app.js }
+- { op: "M4.8", seed: app4-dashboard, site: toolbar-arrows,    file: dist/app.js }
+- { op: "M5.1", seed: app4-dashboard, site: dash-focus-outline, file: dist/styles.css }
+- { op: "M5.2", seed: app4-dashboard, site: dash-muted-contrast, file: dist/styles.css }
+- { op: "M5.3", seed: app4-dashboard, site: dash-target-size,  file: dist/styles.css }
+- { op: "M6.1", seed: app4-dashboard, site: refresh-announce,  file: dist/app.js }
+- { op: "M6.2", seed: app4-dashboard, site: dash-title,        file: dist/app.js }
+- { op: "M6.2", seed: app4-dashboard, site: dash-focus,        file: dist/app.js }
+- { op: "M6.3", seed: app4-dashboard, site: metric-pause,      file: dist/app.js }
+- { op: "M6.4", seed: app4-dashboard, site: sla-esc,           file: dist/app.js }
+- { op: "M1.1", seed: app4-dashboard, site: refresh-btn,       file: dist/index.html, sel: "#refresh-btn" }
+- { op: "M2.4", seed: app4-dashboard, site: nav-projects,      file: dist/index.html, sel: '.nav a[href="#/projects"]' }
+- { op: "M2.5", seed: app4-dashboard, site: refresh-mismatch,  file: dist/index.html, sel: "#refresh-btn" }
+- { op: "M4.7", seed: app4-dashboard, site: refresh-unfocusable, file: dist/index.html, sel: "#refresh-btn" }
+- { op: "M5.4", seed: app4-dashboard, site: dash-footer-occlusion, file: dist/styles.css }

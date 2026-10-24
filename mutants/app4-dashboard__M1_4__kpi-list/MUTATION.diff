@@ -1,0 +1,106 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/index.html mutants/app4-dashboard__M1_4__kpi-list/dist/index.html
+--- seeds/app4-dashboard/dist/index.html	2026-07-12 01:23:25
++++ mutants/app4-dashboard__M1_4__kpi-list/dist/index.html	2026-07-12 01:24:18
+@@ -1,21 +1,19 @@
+-<!doctype html>
+-<html lang="en">
+-<head>
+-  <meta charset="utf-8" />
+-  <meta name="viewport" content="width=device-width, initial-scale=1" />
++<!DOCTYPE html><html lang="en"><head>
++  <meta charset="utf-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Metrics — Overview</title>
+-  <link rel="stylesheet" href="styles.css" />
++  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <a class="skip-link" href="#main">Skip to main content</a>
+ 
+   <header>
+-    <img id="brand-img" src="logo.svg" alt="Acme Metrics logo" width="36" height="36" />
++    <img id="brand-img" src="logo.svg" alt="Acme Metrics logo" width="36" height="36">
+     <nav aria-label="Primary">
+       <ul class="nav">
+-        <li><a href="#/" data-route>Overview</a></li>
+-        <li><a href="#/projects" data-route>Projects</a></li>
+-        <li><a href="#/settings" data-route>Settings</a></li>
++        <li><a href="#/" data-route="">Overview</a></li>
++        <li><a href="#/projects" data-route="">Projects</a></li>
++        <li><a href="#/settings" data-route="">Settings</a></li>
+       </ul>
+     </nav>
+   </header>
+@@ -37,11 +35,7 @@
+         <span id="refresh-result" class="muted"></span>
+       </p>
+       <h2>Key numbers</h2>
+-      <ul id="kpi-list">
+-        <li>Active users: <span data-kpi="users">1,204</span></li>
+-        <li>Open incidents: <span data-kpi="incidents">2</span></li>
+-        <li>Deployment frequency: <span data-kpi="deploys">4.2/day</span></li>
+-      </ul>
++      <div id="kpi-list"><div class="row">Active users: <span data-kpi="users">1,204</span></div><div class="row">Open incidents: <span data-kpi="incidents">2</span></div><div class="row">Deployment frequency: <span data-kpi="deploys">4.2/day</span></div></div>
+       <div class="ticker-wrap">
+         <p id="live-metric" aria-hidden="true">Requests/min: 312</p>
+         <button id="metric-pause" aria-pressed="false">Pause live metric</button>
+@@ -51,13 +45,13 @@
+         <button type="button" id="sla-term" class="term" aria-describedby="sla-card">SLA</button>
+         for a definition.
+       </p>
+-      <div id="sla-card" role="tooltip" hidden>
++      <div id="sla-card" role="tooltip" hidden="">
+         Service-Level Agreement — the availability commitment. Dismiss with Escape.
+       </div>
+     </section>
+ 
+     <!-- ============ VIEW: PROJECTS ============ -->
+-    <section id="view-projects" class="view" data-title="Metrics — Projects" hidden>
++    <section id="view-projects" class="view" data-title="Metrics — Projects" hidden="">
+       <h1>Projects</h1>
+ 
+       <div role="toolbar" aria-label="Project actions" id="proj-toolbar">
+@@ -80,11 +74,11 @@
+     </section>
+ 
+     <!-- ============ VIEW: SETTINGS ============ -->
+-    <section id="view-settings" class="view" data-title="Metrics — Settings" hidden>
++    <section id="view-settings" class="view" data-title="Metrics — Settings" hidden="">
+       <h1>Settings</h1>
+       <p>
+         <label for="report-email">Report recipient email</label>
+-        <input id="report-email" type="email" autocomplete="email" />
++        <input id="report-email" type="email" autocomplete="email">
+       </p>
+       <h2>Danger zone</h2>
+       <p>
+@@ -93,16 +87,15 @@
+       <button id="adv-btn" aria-expanded="false" aria-controls="adv-panel">
+         Show advanced options
+       </button>
+-      <div id="adv-panel" aria-hidden="true" hidden>
++      <div id="adv-panel" aria-hidden="true" hidden="">
+         <p>Retention: 90 days. Region: EU. Telemetry: minimal.</p>
+       </div>
+     </section>
+   </main>
+ 
+   <!-- ============ CONFIRM DIALOG ============ -->
+-  <div id="confirm-overlay" class="overlay" hidden>
+-    <div id="confirm-dialog" role="dialog" aria-modal="true"
+-         aria-labelledby="confirm-title" aria-describedby="confirm-desc" class="dialog">
++  <div id="confirm-overlay" class="overlay" hidden="">
++    <div id="confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-desc" class="dialog">
+       <h2 id="confirm-title">Reset all data?</h2>
+       <p id="confirm-desc">This deletes all metrics history. This cannot be undone.</p>
+       <p>
+@@ -114,5 +107,6 @@
+ 
+   <footer><p class="muted">© Acme Metrics — benchmark seed application.</p></footer>
+   <script src="app.js"></script>
+-</body>
+-</html>
++
++
++</body></html>
+\ No newline at end of file

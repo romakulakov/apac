@@ -1,0 +1,77 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app4-dashboard__M5_2__dash-muted-contrast",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M6_3__ticker-pause/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M6_3__ticker-pause/dist/app.js	2026-07-12 01:24:17
+@@ -135,7 +135,6 @@
+ $("#ticker-pause").addEventListener("click", e => {
+   const b = e.currentTarget, paused = b.getAttribute("aria-pressed") === "true";
+   if (paused) { tickerTimer = setInterval(nextTip, 5000); } // resume
+-  if (!paused) clearInterval(tickerTimer);                // @mut:M6.3:ticker-pause
+   b.setAttribute("aria-pressed", String(!paused));
+   b.textContent = paused ? "Pause tips" : "Resume tips";
+ });

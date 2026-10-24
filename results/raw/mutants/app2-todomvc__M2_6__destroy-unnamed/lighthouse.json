@@ -1,0 +1,59 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app2-todomvc__M2_6__destroy-unnamed",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "button-name",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "button-name",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "button-name",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "button-name",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 2
+        }
+      ]
+    }
+  ]
+}

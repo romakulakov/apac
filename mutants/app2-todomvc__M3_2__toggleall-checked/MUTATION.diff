@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app2-todomvc/dist/app.js mutants/app2-todomvc__M3_2__toggleall-checked/dist/app.js
+--- seeds/app2-todomvc/dist/app.js	2026-07-11 20:40:34
++++ mutants/app2-todomvc__M3_2__toggleall-checked/dist/app.js	2026-07-12 01:24:17
+@@ -37,7 +37,6 @@
+   $("#count").textContent = `${left} item${left === 1 ? "" : "s"} left`;
+   const allDone = todos.length > 0 && todos.every(t => t.done);
+   $("#toggle-all").classList.toggle("on", allDone);
+-  $("#toggle-all").setAttribute("aria-checked", String(allDone)); // @mut:M3.2:toggleall-checked
+ }
+ render();
+ 

@@ -1,0 +1,15 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M4_3__confirm-dlg/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M4_3__confirm-dlg/dist/app.js	2026-07-12 01:24:18
+@@ -146,11 +146,6 @@
+ }
+ function onConfirmKeydown(e) {
+   if (e.key === "Escape") { e.preventDefault(); closeConfirm(); } // @mut:M4.4:confirm-dlg
+-  if (e.key === "Tab") {                                  // @mut:M4.3:confirm-dlg
+-    const f = focusablesIn(dialog), first = f[0], last = f[f.length - 1]; // @mut:M4.3:confirm-dlg
+-    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); } // @mut:M4.3:confirm-dlg
+-    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); } // @mut:M4.3:confirm-dlg
+-  }                                                       // @mut:M4.3:confirm-dlg
+ }
+ resetBtn.addEventListener("click", openConfirm);
+ $("#confirm-no").addEventListener("click", closeConfirm);

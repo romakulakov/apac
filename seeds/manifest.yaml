@@ -1,0 +1,100 @@
+# Per-seed accessibility warrant + per-component provenance.
+seeds:
+  - id: app1-apg-composition
+    warrant: self-audit          # author-written to APG behavior
+    audit_file: null             # fill: audits/app1.md (WCAG-EM checklist, Step 2)
+    components: []
+  - id: app2-todomvc
+    warrant: self-audit          # remediated TodoMVC-class app
+    audit_file: null
+    components: []
+  - id: app3-form
+    warrant: self-audit          # GOV.UK/USWDS PATTERN STYLE, author-written.
+    # DECISION 2026-07-11: self-audit is the final warrant for ALL seeds —
+    # author-written code is required by the tag-based mutation mechanism
+    # (state-of-truth discipline). Inherited audit applies only to the
+    # prototype's verbatim APG golden references.
+    audit_file: null
+    components: []
+  - id: app4-dashboard
+    warrant: self-audit
+    audit_file: null
+    components: []
+
+# ===========================================================================
+# Clean-run dispositions — BASELINE B(T,s) FROZEN 2026-07-11.
+# Battery: axe 4.12.1, pa11y 9.1.1, lighthouse 13.4.0, accessibility-checker
+# 4.0.26, @qualweb/core 0.8.11 (VERSIONS.md); Chromium: Playwright 1.61.1
+# Chrome for Testing 149.0.7827.55. 100 scans (app1 6, app2 4, app3 4,
+# app4 6 — each x 5 tools), 0 scan errors. Raw JSON: results/raw/clean/.
+# Every finding of the final run is dispositioned below; earlier-round
+# findings fixed in commit 788f691 are recorded as FIXED.
+# ===========================================================================
+dispositions:
+  # ---- fixed defects (found by clean battery, round 1) ----
+  - seed: app2-todomvc
+    tool: [axe, pa11y, ibm]
+    rule: "label / F68 / H91.InputText.Name / input_label_exists"
+    element: ".edit-field (template row input)"
+    disposition: "FIXED 788f691"
+    note: "Edit field had no accessible name in any state; aria-label added."
+  - seed: app2-todomvc
+    tool: [axe]
+    rule: "label"
+    element: "input.toggle#cb-N (edit mode)"
+    disposition: "FIXED 788f691"
+    note: >
+      Entering edit mode hid the .title label while its checkbox stayed
+      visible and name-less; checkbox now hidden together with its label
+      (standard TodoMVC edit-mode row swap). Found only in the todoEdit
+      staged scan — a genuinely state-dependent defect.
+  - seed: app3-form
+    tool: [pa11y, ibm]
+    rule: "H98 / input_autocomplete_valid"
+    element: "#street"
+    disposition: "FIXED 788f691"
+    note: >
+      autocomplete="street-address" is a multiline-group token (WHATWG);
+      single-line input now uses address-line1.
+  - seed: [app1-apg-composition, app4-dashboard]
+    tool: [ibm]
+    rule: "element_tabbable_role_valid"
+    element: "#term / #sla-term (hover-card triggers)"
+    disposition: "FIXED 788f691"
+    note: >
+      Focusable span with role generic; converted to type=button per APG
+      tooltip pattern (trigger is a widget). Behavior unchanged (id-based
+      JS hooks; CSS reset keeps inline term rendering).
+
+  # ---- false positives (remain in final run; count into B(T,s)) ----
+  - seed: [app1-apg-composition, app2-todomvc, app4-dashboard]
+    tool: [pa11y]
+    rule: "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID"
+    element: "hash-router links (.nav a, filter links, #report-link)"
+    disposition: "FALSE-POSITIVE"
+    note: >
+      HTML_CodeSniffer parses href="#/route" as an in-page fragment anchor
+      and reports the missing id "/route". These are SPA router links, not
+      fragment anchors; navigation works for all users. Engine limitation,
+      SC 2.4.1 not violated. 4/scan on app1, 3/scan on app2 and app4.
+  - seed: [app1-apg-composition, app2-todomvc, app3-form, app4-dashboard]
+    tool: [ibm]
+    rule: "aria_content_in_landmark"
+    element: "body > a.skip-link"
+    disposition: "FALSE-POSITIVE"
+    note: >
+      The skip link intentionally precedes all landmarks (standard GOV.UK/
+      USWDS/WebAIM placement so it is the first tab stop). Placing all
+      content inside landmarks is an IBM best-practice rule; no normative
+      WCAG success criterion requires it. 1/scan on every app.
+  - seed: [app1-apg-composition]
+    tool: [ibm]
+    rule: "aria_child_tabbable"
+    element: "div[role=tablist] (openSettingsDialog staged scan only)"
+    disposition: "FALSE-POSITIVE"
+    note: >
+      Fires only while the modal dialog is open: the background — including
+      the tablist's roving tabindex — is intentionally inert per the APG
+      modal pattern, so no tab is tabbable in that state. The rule flags
+      correct temporal behavior from a single snapshot; a textbook
+      architecture-level false positive.

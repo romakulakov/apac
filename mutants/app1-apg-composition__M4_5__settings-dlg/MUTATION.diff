@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M4_5__settings-dlg/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M4_5__settings-dlg/dist/app.js	2026-07-12 01:24:16
+@@ -56,7 +56,6 @@
+   overlay.hidden = true;
+   setBackgroundInert(false);
+   document.removeEventListener("keydown", onDialogKeydown);
+-  lastFocused && lastFocused.focus();                     // @mut:M4.5:settings-dlg
+ }
+ function onDialogKeydown(e) {
+   if (e.key === "Escape") { e.preventDefault(); closeDialog(); } // @mut:M4.4:settings-dlg

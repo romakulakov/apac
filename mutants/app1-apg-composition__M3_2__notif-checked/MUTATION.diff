@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M3_2__notif-checked/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M3_2__notif-checked/dist/app.js	2026-07-12 01:24:16
+@@ -177,7 +177,6 @@
+ function toggleNotif() {
+   const on = notif.classList.contains("on");  // state source: class
+   notif.classList.toggle("on", !on);
+-  notif.setAttribute("aria-checked", String(!on));        // @mut:M3.2:notif-checked
+ }
+ notif.addEventListener("click", toggleNotif);
+ notif.addEventListener("keydown", e => {

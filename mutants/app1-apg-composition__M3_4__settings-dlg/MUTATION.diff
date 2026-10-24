@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M3_4__settings-dlg/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M3_4__settings-dlg/dist/app.js	2026-07-12 01:24:16
+@@ -42,7 +42,6 @@
+   ["header", "main", "footer"].forEach(sel => {
+     const el = $(sel);
+     if (!on) { el.removeAttribute("inert"); return; }     // close: restore background
+-    el.setAttribute("inert", "");                         // @mut:M3.4:settings-dlg
+   });
+ }
+ function openDialog() {

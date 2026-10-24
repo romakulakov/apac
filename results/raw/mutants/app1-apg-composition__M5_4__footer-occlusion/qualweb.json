@@ -1,0 +1,37 @@
+{
+  "tool": "qualweb",
+  "version": "0.8.11",
+  "target": "app1-apg-composition__M5_4__footer-occlusion",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": []
+    }
+  ]
+}
