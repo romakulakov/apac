@@ -1,0 +1,116 @@
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metrics — Overview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header>
+    <img id="brand-img" src="logo.svg" alt="Acme Metrics logo" width="36" height="36">
+    <nav aria-label="Primary">
+      <ul class="nav">
+        <li><a href="#/" data-route="">Overview</a></li>
+        <li><a href="#/projects" data-route="">click here</a></li>
+        <li><a href="#/settings" data-route="">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <div id="app-status" role="status" aria-live="polite"></div>
+
+    <!-- ============ VIEW: OVERVIEW ============ -->
+    <section id="view-overview" class="view" data-title="Metrics — Overview">
+      <h1>Overview</h1>
+      <div role="toolbar" aria-label="Chart view options" class="icon-bar">
+        <button class="icon-btn" aria-label="Bar chart"><span aria-hidden="true">▊</span></button>
+        <button class="icon-btn" aria-label="Line chart"><span aria-hidden="true">➚</span></button>
+        <button class="icon-btn" aria-label="Pie chart"><span aria-hidden="true">◕</span></button>
+        <button class="icon-btn" aria-label="Download chart"><span aria-hidden="true">⭳</span></button>
+      </div>
+      <p>
+        <button id="refresh-btn">Refresh metrics</button>
+        <span id="refresh-result" class="muted"></span>
+      </p>
+      <h2>Key numbers</h2>
+      <ul id="kpi-list">
+        <li>Active users: <span data-kpi="users">1,204</span></li>
+        <li>Open incidents: <span data-kpi="incidents">2</span></li>
+        <li>Deployment frequency: <span data-kpi="deploys">4.2/day</span></li>
+      </ul>
+      <div class="ticker-wrap">
+        <p id="live-metric" aria-hidden="true">Requests/min: 312</p>
+        <button id="metric-pause" aria-pressed="false">Pause live metric</button>
+      </div>
+      <p>
+        Uptime target explained: hover
+        <button type="button" id="sla-term" class="term" aria-describedby="sla-card">SLA</button>
+        for a definition.
+      </p>
+      <div id="sla-card" role="tooltip" hidden="">
+        Service-Level Agreement — the availability commitment. Dismiss with Escape.
+      </div>
+    </section>
+
+    <!-- ============ VIEW: PROJECTS ============ -->
+    <section id="view-projects" class="view" data-title="Metrics — Projects" hidden="">
+      <h1>Projects</h1>
+
+      <div role="toolbar" aria-label="Project actions" id="proj-toolbar">
+        <button tabindex="0">Export</button>
+        <button tabindex="-1">Import</button>
+        <button tabindex="-1" id="archive-btn">Archive selected</button>
+      </div>
+
+      <table id="proj-table">
+        <caption>Project status (select a column header to sort)</caption>
+        <thead>
+          <tr>
+            <th scope="col" aria-sort="none"><button class="sort" data-key="name">Name</button></th>
+            <th scope="col" aria-sort="none"><button class="sort" data-key="owner">Owner</button></th>
+            <th scope="col" aria-sort="descending"><button class="sort" data-key="tasks">Open tasks</button></th>
+          </tr>
+        </thead>
+        <tbody id="proj-body"></tbody>
+      </table>
+    </section>
+
+    <!-- ============ VIEW: SETTINGS ============ -->
+    <section id="view-settings" class="view" data-title="Metrics — Settings" hidden="">
+      <h1>Settings</h1>
+      <p>
+        <label for="report-email">Report recipient email</label>
+        <input id="report-email" type="email" autocomplete="email">
+      </p>
+      <h2>Danger zone</h2>
+      <p>
+        <button id="reset-btn" aria-haspopup="dialog">Reset all data</button>
+      </p>
+      <button id="adv-btn" aria-expanded="false" aria-controls="adv-panel">
+        Show advanced options
+      </button>
+      <div id="adv-panel" aria-hidden="true" hidden="">
+        <p>Retention: 90 days. Region: EU. Telemetry: minimal.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ CONFIRM DIALOG ============ -->
+  <div id="confirm-overlay" class="overlay" hidden="">
+    <div id="confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-desc" class="dialog">
+      <h2 id="confirm-title">Reset all data?</h2>
+      <p id="confirm-desc">This deletes all metrics history. This cannot be undone.</p>
+      <p>
+        <button id="confirm-yes">Delete all data</button>
+        <button id="confirm-no" class="icon-btn" aria-label="Cancel and close"><span aria-hidden="true">✕</span></button>
+      </p>
+    </div>
+  </div>
+
+  <footer><p class="muted">© Acme Metrics — benchmark seed application.</p></footer>
+  <script src="app.js"></script>
+
+
+</body></html>

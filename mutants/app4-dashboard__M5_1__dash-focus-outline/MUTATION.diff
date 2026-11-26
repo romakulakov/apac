@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/styles.css mutants/app4-dashboard__M5_1__dash-focus-outline/dist/styles.css
+--- seeds/app4-dashboard/dist/styles.css	2026-07-12 01:23:43
++++ mutants/app4-dashboard__M5_1__dash-focus-outline/dist/styles.css	2026-07-12 01:24:18
+@@ -11,7 +11,7 @@
+ header { display: flex; align-items: center; gap: 1rem; }
+ .nav { display: flex; gap: 1rem; list-style: none; padding: 0; }
+ .muted { color: var(--muted); }
+-:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; } /* @mut:M5.1:dash-focus-outline */
++:focus-visible { outline: none; } /* @mut:M5.1:dash-focus-outline mutated */
+ .skip-link { position: absolute; left: -999px; } .skip-link:focus { left: .5rem; }
+ button {
+   min-width: 24px; min-height: 24px;   /* @mut:M5.3:dash-target-size */

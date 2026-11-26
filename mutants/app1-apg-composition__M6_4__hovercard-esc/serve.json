@@ -1,0 +1,10 @@
+{
+  "pages": ["/"],
+  "staging": { "/": "openSettingsDialog" },
+  "extra_scans": [
+    { "page": "/", "staging": "gotoForm" },
+    { "page": "/", "staging": "gotoFormSubmitInvalid" },
+    { "page": "/", "staging": "gotoDash" },
+    { "page": "/", "staging": "gotoDashLoad" }
+  ]
+}

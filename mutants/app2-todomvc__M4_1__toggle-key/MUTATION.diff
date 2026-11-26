@@ -1,0 +1,13 @@
+diff -ru --exclude=node_modules seeds/app2-todomvc/dist/app.js mutants/app2-todomvc__M4_1__toggle-key/dist/app.js
+--- seeds/app2-todomvc/dist/app.js	2026-07-11 20:40:34
++++ mutants/app2-todomvc__M4_1__toggle-key/dist/app.js	2026-07-12 01:24:17
+@@ -70,9 +70,6 @@
+   announce(target ? "All tasks marked complete." : "All tasks reopened.");
+ }
+ toggleAll.addEventListener("click", doToggleAll);
+-toggleAll.addEventListener("keydown", e => {                                    // @mut:M4.1:toggle-key
+-  if (e.key === " " || e.key === "Enter") { e.preventDefault(); doToggleAll(); } // @mut:M4.1:toggle-key
+-});                                                                              // @mut:M4.1:toggle-key
+ 
+ /* ---------------- edit (keyboard-operable) ---------------- */
+ $("#todo-list").addEventListener("click", e => {

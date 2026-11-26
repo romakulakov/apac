@@ -1,0 +1,73 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app4-dashboard__M1_5__main-landmark",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": [
+        {
+          "ruleId": "landmark-one-main",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

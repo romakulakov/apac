@@ -1,0 +1,62 @@
+diff -ru --exclude=node_modules seeds/app2-todomvc/dist/index.html mutants/app2-todomvc__M1_1__add-btn/dist/index.html
+--- seeds/app2-todomvc/dist/index.html	2026-07-12 00:20:59
++++ mutants/app2-todomvc__M1_1__add-btn/dist/index.html	2026-07-12 01:24:17
+@@ -1,29 +1,26 @@
+-<!doctype html>
+-<html lang="en">
+-<head>
+-  <meta charset="utf-8" />
+-  <meta name="viewport" content="width=device-width, initial-scale=1" />
++<!DOCTYPE html><html lang="en"><head>
++  <meta charset="utf-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Todos — Acme</title>
+-  <link rel="stylesheet" href="styles.css" />
++  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <a class="skip-link" href="#main">Skip to main content</a>
+ 
+   <main id="main" tabindex="-1">
+-    <img id="app-logo" src="logo.svg" alt="Acme Todos logo" width="36" height="36" />
++    <img id="app-logo" src="logo.svg" alt="Acme Todos logo" width="36" height="36">
+     <h1 id="app-title">Todos</h1>
+     <div id="todo-status" role="status" aria-live="polite"></div>
+ 
+     <p class="new-row">
+       <label for="new-todo">What needs to be done?</label>
+-      <input id="new-todo" type="text" autocomplete="off" />
+-      <button id="add-btn">Add task</button>
++      <input id="new-todo" type="text" autocomplete="off">
++      <div class=" fake-btn" id="add-btn">Add task</div>
+     </p>
+ 
+     <p>
+       <!-- custom toggle-all control: state-sync host -->
+-      <span id="toggle-all" role="checkbox" aria-checked="false" tabindex="0"
+-            aria-labelledby="toggle-all-label" class="toggle-all"></span>
++      <span id="toggle-all" role="checkbox" aria-checked="false" tabindex="0" aria-labelledby="toggle-all-label" class="toggle-all"></span>
+       <span id="toggle-all-label">Mark all as complete</span>
+     </p>
+ 
+@@ -43,14 +40,15 @@
+ 
+   <template id="todo-item">
+     <li class="todo">
+-      <input type="checkbox" class="toggle" />
++      <input type="checkbox" class="toggle">
+       <label class="title"></label>
+       <button class="edit-btn">Edit</button>
+       <button class="destroy icon-btn" aria-label="Delete task"><span aria-hidden="true">✕</span></button>
+-      <input type="text" class="edit-field" aria-label="Edit task title" hidden />
++      <input type="text" class="edit-field" aria-label="Edit task title" hidden="">
+     </li>
+   </template>
+ 
+   <script src="app.js"></script>
+-</body>
+-</html>
++
++
++</body></html>
+\ No newline at end of file

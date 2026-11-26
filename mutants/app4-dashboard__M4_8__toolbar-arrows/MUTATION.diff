@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M4_8__toolbar-arrows/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M4_8__toolbar-arrows/dist/app.js	2026-07-12 01:24:18
+@@ -104,8 +104,6 @@
+   const i = tbButtons.indexOf(document.activeElement);
+   if (i < 0) return;
+   let j = null;
+-  if (e.key === "ArrowRight") j = (i + 1) % tbButtons.length;            // @mut:M4.8:toolbar-arrows
+-  if (e.key === "ArrowLeft") j = (i - 1 + tbButtons.length) % tbButtons.length; // @mut:M4.8:toolbar-arrows
+   if (e.key === "Home") j = 0;
+   if (e.key === "End") j = tbButtons.length - 1;
+   if (j !== null) {

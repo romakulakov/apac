@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M3_2__tabs-selected/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M3_2__tabs-selected/dist/app.js	2026-07-12 01:24:16
+@@ -80,7 +80,6 @@
+     const sel = t === tab;
+     t.tabIndex = sel ? 0 : -1;                 // visuals key off tabindex
+     $("#" + t.getAttribute("aria-controls")).hidden = !sel;
+-    t.setAttribute("aria-selected", String(sel));         // @mut:M3.2:tabs-selected
+   });
+   tab.focus();
+ }

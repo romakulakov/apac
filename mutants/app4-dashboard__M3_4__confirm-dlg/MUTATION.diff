@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M3_4__confirm-dlg/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M3_4__confirm-dlg/dist/app.js	2026-07-12 01:24:18
+@@ -128,7 +128,6 @@
+   ["header", "main", "footer"].forEach(sel => {
+     const el = $(sel);
+     if (!on) { el.removeAttribute("inert"); return; }     // close: restore background
+-    el.setAttribute("inert", "");                         // @mut:M3.4:confirm-dlg
+   });
+ }
+ function openConfirm() {

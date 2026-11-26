@@ -1,0 +1,91 @@
+{
+  "tool": "ibm",
+  "version": "4.0.26",
+  "target": "app2-todomvc__M2_1__newtodo-label",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "label_ref_valid",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "input_label_exists",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "label_ref_valid",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "input_label_exists",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "label_ref_valid",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "input_label_exists",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "label_ref_valid",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "input_label_exists",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

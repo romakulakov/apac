@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M6_1__refresh-announce/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M6_1__refresh-announce/dist/app.js	2026-07-12 01:24:18
+@@ -29,7 +29,6 @@
+   setTimeout(() => {
+     $('[data-kpi="users"]').textContent = (1200 + Math.floor(Math.random() * 20)).toLocaleString();
+     $("#refresh-result").textContent = "Metrics updated.";
+-    announce("Metrics updated.");                         // @mut:M6.1:refresh-announce
+   }, 400);
+ });
+ 

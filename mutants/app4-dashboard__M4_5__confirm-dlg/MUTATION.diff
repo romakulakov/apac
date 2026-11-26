@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M4_5__confirm-dlg/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M4_5__confirm-dlg/dist/app.js	2026-07-12 01:24:18
+@@ -142,7 +142,6 @@
+   overlay.hidden = true;
+   setInert(false);
+   document.removeEventListener("keydown", onConfirmKeydown);
+-  lastFocused && lastFocused.focus();                     // @mut:M4.5:confirm-dlg
+ }
+ function onConfirmKeydown(e) {
+   if (e.key === "Escape") { e.preventDefault(); closeConfirm(); } // @mut:M4.4:confirm-dlg

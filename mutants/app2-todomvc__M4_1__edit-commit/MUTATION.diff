@@ -1,0 +1,13 @@
+diff -ru --exclude=node_modules seeds/app2-todomvc/dist/app.js mutants/app2-todomvc__M4_1__edit-commit/dist/app.js
+--- seeds/app2-todomvc/dist/app.js	2026-07-11 20:40:34
++++ mutants/app2-todomvc__M4_1__edit-commit/dist/app.js	2026-07-12 01:24:17
+@@ -90,9 +90,6 @@
+   $(".title", li).hidden = true;
+   $(".toggle", li).hidden = true;  // its label is the hidden .title — hide together
+   field.focus();                                          // @mut:M4.2:edit-focus
+-  field.addEventListener("keydown", function onKey(e) {   // @mut:M4.1:edit-commit
+-    if (e.key === "Enter") commit(); if (e.key === "Escape") cancel(); // @mut:M4.1:edit-commit
+-  });                                                     // @mut:M4.1:edit-commit
+   field.addEventListener("blur", commit, { once: true });
+   let closed = false;  // re-entrancy guard: keydown + blur must not both fire
+   function close() {

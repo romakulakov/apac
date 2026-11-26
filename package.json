@@ -1,0 +1,24 @@
+{
+  "name": "apac-benchmark",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "versions": "node tools/record_versions.mjs",
+    "mutants": "node operators/generate_mutants.mjs",
+    "cas": "security find-certificate -a -p /Library/Keychains/System.keychain > harness/system-cas.pem",
+    "scan:clean": "NODE_EXTRA_CA_CERTS=harness/system-cas.pem node harness/run_all.mjs --targets seeds --out results/raw/clean",
+    "scan:mutants": "NODE_EXTRA_CA_CERTS=harness/system-cas.pem node harness/run_all.mjs --targets mutants --out results/raw/mutants"
+  },
+  "dependencies": {
+    "playwright": "1.61.1",
+    "@axe-core/playwright": "4.12.1",
+    "axe-core": "4.12.1",
+    "pa11y": "9.1.1",
+    "lighthouse": "13.4.0",
+    "accessibility-checker": "4.0.26",
+    "@qualweb/core": "0.8.11",
+    "jscodeshift": "17.3.0",
+    "cheerio": "1.2.0",
+    "yaml": "2.9.0"
+  }
+}

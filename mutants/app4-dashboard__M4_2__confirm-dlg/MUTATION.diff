@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M4_2__confirm-dlg/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M4_2__confirm-dlg/dist/app.js	2026-07-12 01:24:18
+@@ -135,7 +135,6 @@
+   lastFocused = document.activeElement;
+   overlay.hidden = false;
+   setInert(true);
+-  focusablesIn(dialog)[0].focus();                        // @mut:M4.2:confirm-dlg
+   document.addEventListener("keydown", onConfirmKeydown);
+ }
+ function closeConfirm() {

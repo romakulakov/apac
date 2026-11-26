@@ -1,0 +1,59 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app3-form__M5_2__form-muted-contrast",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep2",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep3",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 2
+        }
+      ]
+    }
+  ]
+}

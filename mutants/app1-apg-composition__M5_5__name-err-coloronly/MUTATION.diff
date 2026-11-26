@@ -1,0 +1,158 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/index.html mutants/app1-apg-composition__M5_5__name-err-coloronly/dist/index.html
+--- seeds/app1-apg-composition/dist/index.html	2026-07-12 00:20:57
++++ mutants/app1-apg-composition__M5_5__name-err-coloronly/dist/index.html	2026-07-12 01:24:17
+@@ -1,21 +1,19 @@
+-<!doctype html>
+-<html lang="en">
+-<head>
+-  <meta charset="utf-8" />
+-  <meta name="viewport" content="width=device-width, initial-scale=1" />
++<!DOCTYPE html><html lang="en"><head>
++  <meta charset="utf-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Acme Tasks — Home</title>
+-  <link rel="stylesheet" href="styles.css" />
++  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <a class="skip-link" href="#main">Skip to main content</a>
+ 
+   <header>
+-    <img id="logo" src="logo.svg" alt="Acme Tasks logo" width="40" height="40" />
++    <img id="logo" src="logo.svg" alt="Acme Tasks logo" width="40" height="40">
+     <nav aria-label="Primary">
+       <ul class="nav">
+-        <li><a href="#/" data-route>Home</a></li>
+-        <li><a href="#/form" data-route>Contact form</a></li>
+-        <li><a href="#/dash" data-route>Dashboard</a></li>
++        <li><a href="#/" data-route="">Home</a></li>
++        <li><a href="#/form" data-route="">Contact form</a></li>
++        <li><a href="#/dash" data-route="">Dashboard</a></li>
+       </ul>
+     </nav>
+   </header>
+@@ -34,17 +32,17 @@
+       <!-- APG Tabs with roving tabindex -->
+       <div class="tabs" id="tabs">
+         <div role="tablist" aria-labelledby="tabs-heading">
+-          <button role="tab" id="tab-1" aria-selected="true"  aria-controls="panel-1" tabindex="0">Summary</button>
++          <button role="tab" id="tab-1" aria-selected="true" aria-controls="panel-1" tabindex="0">Summary</button>
+           <button role="tab" id="tab-2" aria-selected="false" aria-controls="panel-2" tabindex="-1">Timeline</button>
+           <button role="tab" id="tab-3" aria-selected="false" aria-controls="panel-3" tabindex="-1">Team</button>
+         </div>
+         <div role="tabpanel" id="panel-1" aria-labelledby="tab-1" tabindex="0">
+           <p>Three projects are on track this quarter.</p>
+         </div>
+-        <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden>
++        <div role="tabpanel" id="panel-2" aria-labelledby="tab-2" tabindex="0" hidden="">
+           <p>Milestones are listed in the dashboard view.</p>
+         </div>
+-        <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden>
++        <div role="tabpanel" id="panel-3" aria-labelledby="tab-3" tabindex="0" hidden="">
+           <p>Seven contributors across two teams.</p>
+         </div>
+       </div>
+@@ -57,7 +55,7 @@
+             How do I create a task?
+           </button>
+         </h3>
+-        <div id="acc-1" role="region" aria-labelledby="acc-1-btn" hidden>
++        <div id="acc-1" role="region" aria-labelledby="acc-1-btn" hidden="">
+           <p>Open the dashboard and choose “Load projects”, then add a task.</p>
+         </div>
+         <h3>
+@@ -65,7 +63,7 @@
+             Can I export my data?
+           </button>
+         </h3>
+-        <div id="acc-2" role="region" aria-labelledby="acc-2-btn" hidden>
++        <div id="acc-2" role="region" aria-labelledby="acc-2-btn" hidden="">
+           <p>Yes — exports are available from account settings.</p>
+         </div>
+       </div>
+@@ -83,7 +81,7 @@
+         <button type="button" id="term" class="term" aria-describedby="hovercard">WCAG</button>
+         to see a definition.
+       </p>
+-      <div id="hovercard" role="tooltip" hidden>
++      <div id="hovercard" role="tooltip" hidden="">
+         Web Content Accessibility Guidelines — dismiss with Escape.
+       </div>
+ 
+@@ -95,22 +93,20 @@
+     </section>
+ 
+     <!-- ============ VIEW: FORM ============ -->
+-    <section id="view-form" class="view" data-title="Acme Tasks — Contact form" hidden>
++    <section id="view-form" class="view" data-title="Acme Tasks — Contact form" hidden="">
+       <h1>Contact form</h1>
+-      <form id="contact" novalidate>
++      <form id="contact" novalidate="">
+         <div id="form-status" role="status" aria-live="polite"></div>
+ 
+         <p>
+           <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+-          <input id="name" name="name" type="text" autocomplete="name"
+-                 required aria-required="true" aria-describedby="name-err" />
+-          <span id="name-err" class="error" hidden>Enter your full name.</span>
++          <input id="name" name="name" type="text" autocomplete="name" required="" aria-required="true" aria-describedby="name-err">
++          <span id="name-err" class="error" hidden=""></span>
+         </p>
+         <p>
+           <label for="email">Email address <span class="req" aria-hidden="true">*</span></label>
+-          <input id="email" name="email" type="email" autocomplete="email"
+-                 required aria-required="true" aria-describedby="email-err" />
+-          <span id="email-err" class="error" hidden>
++          <input id="email" name="email" type="email" autocomplete="email" required="" aria-required="true" aria-describedby="email-err">
++          <span id="email-err" class="error" hidden="">
+             <span class="err-icon" aria-hidden="true">⚠</span>
+             Enter a valid email address.
+           </span>
+@@ -120,7 +116,7 @@
+     </section>
+ 
+     <!-- ============ VIEW: DASHBOARD ============ -->
+-    <section id="view-dash" class="view" data-title="Acme Tasks — Dashboard" hidden>
++    <section id="view-dash" class="view" data-title="Acme Tasks — Dashboard" hidden="">
+       <h1>Dashboard</h1>
+       <p>
+         <button id="load-btn">Load projects</button>
+@@ -137,24 +133,22 @@
+ 
+       <h2>Notifications</h2>
+       <!-- custom checkbox (state-sync host, SC 4.1.2) -->
+-      <div id="notif-toggle" role="checkbox" aria-checked="false" tabindex="0"
+-           aria-labelledby="notif-label"></div>
++      <div id="notif-toggle" role="checkbox" aria-checked="false" tabindex="0" aria-labelledby="notif-label"></div>
+       <span id="notif-label">Email me weekly summaries</span>
+ 
+       <h2>Details</h2>
+       <button id="reveal-btn" aria-expanded="false" aria-controls="detail-panel">
+         Show account details
+       </button>
+-      <div id="detail-panel" aria-hidden="true" hidden>
++      <div id="detail-panel" aria-hidden="true" hidden="">
+         <p>Plan: Team. Seats: 7. Renewal: January.</p>
+       </div>
+     </section>
+   </main>
+ 
+   <!-- ============ MODAL DIALOG (APG) ============ -->
+-  <div id="overlay" class="overlay" hidden>
+-    <div id="settings-dialog" role="dialog" aria-modal="true"
+-         aria-labelledby="dlg-title" class="dialog">
++  <div id="overlay" class="overlay" hidden="">
++    <div id="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="dlg-title" class="dialog">
+       <h2 id="dlg-title">Settings</h2>
+       <p>
+         <label for="theme">Theme</label>
+@@ -172,5 +166,6 @@
+   </footer>
+ 
+   <script src="app.js"></script>
+-</body>
+-</html>
++
++
++</body></html>
+\ No newline at end of file

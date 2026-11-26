@@ -1,0 +1,37 @@
+operator,anchor_type,anchor_id,anchor_note,verified_on
+M1.1,failure-technique,F59,"div/span as interactive control without role",2026-07-11
+M1.2,normative,"WCAG 4.1.2 + ARIA spec","composite widget without role: name/role not programmatically determinable",2026-07-11
+M1.3,failure-technique,F2,"heading demoted to CSS-styled p: text presentation conveys structure without markup (F2 Example 1 exact match; F43 covers the misused-markup direction, not this transform)",2026-07-11
+M1.4,normative,"WCAG 1.3.1 (H48 negation)","list relationships not programmatically determinable",2026-07-11
+M1.5,normative,"WCAG 1.3.1/2.4.1 (ARIA11 negation)","main landmark removed; region relationships lost",2026-07-11
+M2.1,failure-technique,F68,"form control without programmatically associated label",2026-07-11
+M2.2,failure-technique,F65,"img without alt attribute (informative image)",2026-07-11
+M2.3,failure-technique,F30,"filename/placeholder as text alternative",2026-07-11
+M2.4,failure-technique,F63,"link purpose not in same sentence/paragraph/list-item nor ARIA (verified at all 4 sites: surrounding context gives no destination)",2026-07-11
+M2.5,failure-technique,F96,"accessible name does not contain visible label text",2026-07-11
+M2.6,normative,"WCAG 4.1.2","icon-only control without accessible name",2026-07-11
+M3.1,normative,"WCAG 4.1.2","aria-expanded state not updated on change (state desync)",2026-07-11
+M3.2,normative,"WCAG 4.1.2","aria-checked/aria-selected not updated on change",2026-07-11
+M3.3,normative,"WCAG 1.3.1/4.1.2","visible content retains aria-hidden=true (excluded from a11y tree)",2026-07-11
+M3.4,normative,"ARIA aria-modal + APG dialog-modal","aria-modal=true requires code to prevent interaction with outside content; mutant declares modal without inerting background (F85 does NOT cover inertness — verified)",2026-07-11
+M4.1,failure-technique,F54,"pointer-only event handling on custom control",2026-07-11
+M4.2,failure-technique,F85,"focus not moved into opened dialog; F85 procedure step 1 (focus into dialog or next-in-sequence) fails — dialog not DOM-adjacent to trigger",2026-07-11
+M4.3,normative,"APG dialog-modal keyboard table + WCAG 2.4.3","Tab must cycle within dialog (last→first); mutant lets Tab escape into obscured background (F85 does NOT cover containment — verified)",2026-07-11
+M4.4,normative,"WCAG 2.1.2 + APG dialog-modal (Escape: closes)","focus cannot be moved away using keyboard alone — SC 2.1.2's own normative failure condition; F10 is strictly plugin/format traps (verified, NOT applicable)",2026-07-11
+M4.5,failure-technique,F85,"focus not returned to trigger on close; F85 procedure step 2 (return to trigger on dismissal) explicitly covers this",2026-07-11
+M4.6,failure-technique,F44,"positive tabindex creating focus order inconsistent with meaning",2026-07-11
+M4.7,normative,"WCAG 2.1.1","interactive element removed from keyboard sequence (tabindex=-1)",2026-07-11
+M4.8,normative,"APG tabs keyboard table","Left/Right Arrow must move focus to previous/next tab (wrapping) — verified APG must-row; roving tabindex logic removed",2026-07-11
+M5.1,failure-technique,F78,"focus indicator removed/obscured by styling",2026-07-11
+M5.2,normative,"WCAG 1.4.3 contrast failure","text contrast below 4.5:1 (F83/F24-class)",2026-07-11
+M5.3,normative,"WCAG 2.5.8 failure condition","target smaller than 24x24 CSS px without spacing exception",2026-07-11
+M5.4,normative,"WCAG 2.4.11 failure condition","focused element entirely hidden by author-created sticky content",2026-07-11
+M5.5,failure-technique,F81,"error state indicated by color alone",2026-07-11
+M6.1,normative,"WCAG 4.1.3","status message not programmatically determinable (no announcement)",2026-07-11
+M6.2,failure-technique,F25,"document title not updated on view change; + APG focus-management practice",2026-07-11
+M6.3,normative,"WCAG 2.2.2 auto-updating clause","auto-updating content without pause/stop/hide mechanism — SC's own normative condition; F16 is scrolling/moving-specific (verified, weak for discrete text swaps)",2026-07-11
+M6.4,normative,"WCAG 1.4.13 Dismissible condition","hover content not dismissible without moving pointer (Escape removed); F95 covers only hoverability (verified, NOT dismissal)",2026-07-11
+M7.1,normative,"WCAG 3.3.1","error message not programmatically associated with field",2026-07-11
+M7.2,normative,"WCAG 3.3.2 (H90 negation)","required state conveyed visually only",2026-07-11
+M7.3,normative,"WCAG 1.3.5 (H98 negation)","input purpose token removed from identity field",2026-07-11
+M7.4,normative,"WCAG 3.3.1 + WAI form practice","focus not moved to error on failed submit; error not surfaced to AT user",2026-07-11

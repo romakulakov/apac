@@ -1,0 +1,115 @@
+{
+  "tool": "pa11y",
+  "version": "9.1.1",
+  "target": "app2-todomvc__M2_4__filter-completed",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        },
+        {
+          "ruleId": "WCAG2AA.Principle2.Guideline2_4.2_4_1.G1,G123,G124.NoSuchID",
+          "sc": [
+            "2.4.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

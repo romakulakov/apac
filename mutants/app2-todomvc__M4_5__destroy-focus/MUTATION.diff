@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app2-todomvc/dist/app.js mutants/app2-todomvc__M4_5__destroy-focus/dist/app.js
+--- seeds/app2-todomvc/dist/app.js	2026-07-11 20:40:34
++++ mutants/app2-todomvc__M4_5__destroy-focus/dist/app.js	2026-07-12 01:24:17
+@@ -124,7 +124,6 @@
+   render();
+   announce(`Deleted task: ${title}.`);
+   const target = next ? $(`li[data-id="${next.dataset.id}"] .destroy`) : $("#new-todo");
+-  (target ?? $("#new-todo")).focus();                     // @mut:M4.5:destroy-focus
+ }
+ 
+ /* ---------------- clear completed ---------------- */

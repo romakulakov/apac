@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M6_2__router-focus/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M6_2__router-focus/dist/app.js	2026-07-12 01:24:17
+@@ -24,7 +24,6 @@
+   $$(".view").forEach(v => (v.hidden = v.id !== id));
+   const view = $("#" + id);
+   document.title = view.dataset.title;                    // @mut:M6.2:router-title
+-  $("#main").focus();                                     // @mut:M6.2:router-focus
+ }
+ window.addEventListener("hashchange", route);
+ route();

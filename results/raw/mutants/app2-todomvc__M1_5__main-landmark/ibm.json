@@ -1,0 +1,51 @@
+{
+  "tool": "ibm",
+  "version": "4.0.26",
+  "target": "app2-todomvc__M1_5__main-landmark",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 5
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 6
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 5
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 5
+        }
+      ]
+    }
+  ]
+}

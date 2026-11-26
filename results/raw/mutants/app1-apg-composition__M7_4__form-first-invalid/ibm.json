@@ -1,0 +1,78 @@
+{
+  "tool": "ibm",
+  "version": "4.0.26",
+  "target": "app1-apg-composition__M7_4__form-first-invalid",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        },
+        {
+          "ruleId": "aria_child_tabbable",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

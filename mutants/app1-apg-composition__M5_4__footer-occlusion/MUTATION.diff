@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/styles.css mutants/app1-apg-composition__M5_4__footer-occlusion/dist/styles.css
+--- seeds/app1-apg-composition/dist/styles.css	2026-07-12 01:16:08
++++ mutants/app1-apg-composition__M5_4__footer-occlusion/dist/styles.css	2026-07-12 01:24:16
+@@ -71,6 +71,6 @@
+ 
+ /* --- footer: non-occluding by default (SC 2.4.11) --- */
+ .sticky-footer {
+-  position: static;            /* @mut:M5.4:footer-occlusion */
++  position: fixed; inset: auto 0 0 0; height: 6rem; z-index: 50; /* @mut:M5.4:footer-occlusion mutated */
+   background: #f0f0f0;
+ }

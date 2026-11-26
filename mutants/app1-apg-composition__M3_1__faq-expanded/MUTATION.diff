@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M3_1__faq-expanded/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M3_1__faq-expanded/dist/app.js	2026-07-12 01:24:16
+@@ -100,7 +100,6 @@
+     const panel = $("#" + btn.getAttribute("aria-controls"));
+     const open = !panel.hidden;                 // state source: visibility
+     panel.hidden = open;
+-    btn.setAttribute("aria-expanded", String(!open));     // @mut:M3.1:faq-expanded
+   });
+ });
+ 

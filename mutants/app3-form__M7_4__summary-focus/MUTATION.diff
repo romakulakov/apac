@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app3-form/dist/app.js mutants/app3-form__M7_4__summary-focus/dist/app.js
+--- seeds/app3-form/dist/app.js	2026-07-06 15:11:05
++++ mutants/app3-form__M7_4__summary-focus/dist/app.js	2026-07-12 01:24:18
+@@ -69,7 +69,6 @@
+     li.append(a); list.append(li);
+   }
+   $("#error-summary").hidden = false;
+-  $("#error-summary").focus();                            // @mut:M7.4:summary-focus
+   announce(`${bad.length} field${bad.length === 1 ? "" : "s"} need attention.`);
+ }
+ 

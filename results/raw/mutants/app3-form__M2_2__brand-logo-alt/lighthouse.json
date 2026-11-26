@@ -1,0 +1,59 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app3-form__M2_2__brand-logo-alt",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep2",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep3",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

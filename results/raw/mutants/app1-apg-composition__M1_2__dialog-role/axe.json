@@ -1,0 +1,45 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app1-apg-composition__M1_2__dialog-role",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": [
+        {
+          "ruleId": "aria-allowed-attr",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": []
+    }
+  ]
+}

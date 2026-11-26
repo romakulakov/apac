@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M6_2__dash-title/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M6_2__dash-title/dist/app.js	2026-07-12 01:24:18
+@@ -17,7 +17,6 @@
+   const id = VIEWS[key] ?? "view-overview";
+   $$(".view").forEach(v => (v.hidden = v.id !== id));
+   const view = $("#" + id);
+-  document.title = view.dataset.title;                    // @mut:M6.2:dash-title
+   $("#main").focus();                                     // @mut:M6.2:dash-focus
+ }
+ window.addEventListener("hashchange", route);

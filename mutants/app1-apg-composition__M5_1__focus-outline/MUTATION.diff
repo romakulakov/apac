@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/styles.css mutants/app1-apg-composition__M5_1__focus-outline/dist/styles.css
+--- seeds/app1-apg-composition/dist/styles.css	2026-07-12 01:16:08
++++ mutants/app1-apg-composition__M5_1__focus-outline/dist/styles.css	2026-07-12 01:24:16
+@@ -20,7 +20,7 @@
+ .muted, footer p { color: var(--muted); }
+ 
+ /* --- focus visibility (SC 2.4.7) --- */
+-:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; } /* @mut:M5.1:focus-outline */
++:focus-visible { outline: none; } /* @mut:M5.1:focus-outline mutated */
+ 
+ /* --- skip link --- */
+ .skip-link { position: absolute; left: -999px; top: 0; background: #fff; padding: .5rem; }

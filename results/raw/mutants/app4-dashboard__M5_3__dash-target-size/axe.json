@@ -1,0 +1,53 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app4-dashboard__M5_3__dash-target-size",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "target-size",
+          "sc": [
+            "2.5.8"
+          ],
+          "nodes": 4
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": [
+        {
+          "ruleId": "target-size",
+          "sc": [
+            "2.5.8"
+          ],
+          "nodes": 4
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": []
+    }
+  ]
+}

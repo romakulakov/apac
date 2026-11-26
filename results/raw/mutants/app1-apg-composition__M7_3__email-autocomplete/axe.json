@@ -1,0 +1,37 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app1-apg-composition__M7_3__email-autocomplete",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": []
+    }
+  ]
+}

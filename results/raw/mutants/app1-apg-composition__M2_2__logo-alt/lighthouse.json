@@ -1,0 +1,85 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app1-apg-composition__M2_2__logo-alt",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

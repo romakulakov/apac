@@ -1,0 +1,43 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app3-form__M2_1__email-label",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "label",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "label",
+          "sc": [
+            "4.1.2"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep2",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep3",
+      "violations": []
+    }
+  ]
+}

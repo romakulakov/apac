@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M6_4__hovercard-esc/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M6_4__hovercard-esc/dist/app.js	2026-07-12 01:24:17
+@@ -124,7 +124,6 @@
+ card.addEventListener("mouseleave", hideCard);            // hoverable content
+ term.addEventListener("blur", hideCard);
+ document.addEventListener("keydown", e => {
+-  if (e.key === "Escape" && !card.hidden) hideCard();     // @mut:M6.4:hovercard-esc
+ });
+ 
+ /* ---------------- auto-updating ticker (SC 2.2.2) ---------------- */

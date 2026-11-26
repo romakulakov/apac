@@ -1,0 +1,73 @@
+{
+  "tool": "ibm",
+  "version": "4.0.26",
+  "target": "app1-apg-composition__M1_5__main-landmark",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 10
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 10
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 2
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 3
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": [
+        {
+          "ruleId": "aria_content_in_landmark",
+          "sc": [],
+          "nodes": 3
+        }
+      ]
+    }
+  ]
+}

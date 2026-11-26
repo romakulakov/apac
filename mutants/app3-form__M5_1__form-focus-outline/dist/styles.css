@@ -1,0 +1,42 @@
+/* Signup form seed — GOV.UK-pattern-style. Tagged lines = CSS mutation sites. */
+:root {
+  --text: #0b0c0c;
+  --muted: #505a5f;            /* @mut:M5.2:form-muted-contrast */
+  --accent: #1d70b8;
+  --error: #d4351c;
+}
+* { box-sizing: border-box; }
+body { font: 17px/1.55 system-ui, sans-serif; color: var(--text); margin: 0; }
+header, main, footer { max-width: 44rem; margin: 0 auto; padding: 1rem 1.25rem; }
+.brand { font-weight: 700; }
+.muted, .hint { color: var(--muted); display: block; }
+:focus-visible { outline: none; } /* @mut:M5.1:form-focus-outline mutated */
+.skip-link { position: absolute; left: -999px; } .skip-link:focus { left: .5rem; }
+fieldset { border: 0; padding: 0; margin: 0 0 1rem; }
+legend h1 { margin: .2rem 0 1rem; font-size: 1.6rem; }
+label { display: block; font-weight: 600; margin-bottom: .2rem; }
+input[type="text"], input[type="email"], input[type="tel"] {
+  font: inherit; padding: .5rem; border: 2px solid var(--text); border-radius: 0;
+  width: 100%; max-width: 26rem; min-height: 24px;
+}
+.short { max-width: 10rem; }
+input[aria-invalid="true"] { border-color: var(--error); }
+.error { color: var(--error); font-weight: 600; display: block; margin-top: .2rem; }
+#error-summary { border: 4px solid var(--error); padding: .9rem 1.1rem; margin-bottom: 1.25rem; }
+#error-summary h2 { margin: 0 0 .5rem; }
+#error-summary a { color: var(--error); font-weight: 600; }
+button {
+  min-width: 24px; min-height: 24px;   /* @mut:M5.3:form-target-size */
+  font: inherit; font-weight: 600; cursor: pointer;
+  padding: .55rem 1rem; border: 2px solid transparent; border-radius: 0;
+  background: #00703c; color: #fff;
+}
+#back-btn { background: #f3f2f1; color: var(--text); border-color: var(--text); }
+.actions { display: flex; gap: .75rem; }
+dl { display: grid; grid-template-columns: 12rem 1fr; gap: .35rem 1rem; }
+dt { font-weight: 600; }
+
+/* --- footer: non-occluding by default (SC 2.4.11) --- */
+footer {
+  position: static;            /* @mut:M5.4:form-footer-occlusion */
+}

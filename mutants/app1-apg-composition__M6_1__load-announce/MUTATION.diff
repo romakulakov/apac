@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M6_1__load-announce/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M6_1__load-announce/dist/app.js	2026-07-12 01:24:17
+@@ -168,7 +168,6 @@
+   $("#load-result").textContent = "Loading…";
+   setTimeout(() => {
+     $("#load-result").textContent = "3 projects loaded.";
+-    announce("dash-status", "3 projects loaded.");        // @mut:M6.1:load-announce
+   }, 400);
+ });
+ 

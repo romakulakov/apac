@@ -1,0 +1,37 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app4-dashboard__M1_2__confirm-role",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashOpenConfirm",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRefresh",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashGotoProjects",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashSortTable",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "dashRevealAdvanced",
+      "violations": []
+    }
+  ]
+}

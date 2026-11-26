@@ -1,0 +1,10 @@
+diff -ru --exclude=node_modules seeds/app3-form/dist/styles.css mutants/app3-form__M5_4__form-footer-occlusion/dist/styles.css
+--- seeds/app3-form/dist/styles.css	2026-07-11 18:46:20
++++ mutants/app3-form__M5_4__form-footer-occlusion/dist/styles.css	2026-07-12 01:24:18
+@@ -38,5 +38,5 @@
+ 
+ /* --- footer: non-occluding by default (SC 2.4.11) --- */
+ footer {
+-  position: static;            /* @mut:M5.4:form-footer-occlusion */
++  position: fixed; inset: auto 0 0 0; height: 6rem; z-index: 50; /* @mut:M5.4:form-footer-occlusion mutated */
+ }

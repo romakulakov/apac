@@ -1,0 +1,27 @@
+{
+  "tool": "qualweb",
+  "version": "0.8.11",
+  "target": "app2-todomvc__M6_2__filter-title",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": []
+    }
+  ]
+}

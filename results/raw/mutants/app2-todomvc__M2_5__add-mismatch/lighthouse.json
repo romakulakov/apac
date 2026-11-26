@@ -1,0 +1,51 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app2-todomvc__M2_5__add-mismatch",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "label-content-name-mismatch",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "label-content-name-mismatch",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "label-content-name-mismatch",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "label-content-name-mismatch",
+          "sc": [],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+diff -ru --exclude=node_modules seeds/app3-form/dist/styles.css mutants/app3-form__M5_2__form-muted-contrast/dist/styles.css
+--- seeds/app3-form/dist/styles.css	2026-07-11 18:46:20
++++ mutants/app3-form__M5_2__form-muted-contrast/dist/styles.css	2026-07-12 01:24:17
+@@ -1,7 +1,7 @@
+ /* Signup form seed — GOV.UK-pattern-style. Tagged lines = CSS mutation sites. */
+ :root {
+   --text: #0b0c0c;
+-  --muted: #505a5f;            /* @mut:M5.2:form-muted-contrast */
++  --muted: #a8a8a8;            /* @mut:M5.2:form-muted-contrast mutated */
+   --accent: #1d70b8;
+   --error: #d4351c;
+ }

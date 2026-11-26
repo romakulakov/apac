@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/app.js mutants/app4-dashboard__M6_4__sla-esc/dist/app.js
+--- seeds/app4-dashboard/dist/app.js	2026-07-11 23:57:47
++++ mutants/app4-dashboard__M6_4__sla-esc/dist/app.js	2026-07-12 01:24:18
+@@ -58,7 +58,6 @@
+ slaCard.addEventListener("mouseleave", hideSla);
+ slaTerm.addEventListener("blur", hideSla);
+ document.addEventListener("keydown", e => {
+-  if (e.key === "Escape" && !slaCard.hidden) hideSla();   // @mut:M6.4:sla-esc
+ });
+ 
+ /* ---------------- sortable table (aria-sort sync host) ---------------- */

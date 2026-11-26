@@ -1,0 +1,59 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app2-todomvc__M2_2__app-logo-alt",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": [
+        {
+          "ruleId": "image-alt",
+          "sc": [
+            "1.1.1"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

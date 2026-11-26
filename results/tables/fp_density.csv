@@ -1,0 +1,8 @@
+tool,target,alerts,distinct_rules
+ibm,app1-apg-composition,7,2
+ibm,app2-todomvc,4,1
+ibm,app3-form,4,1
+ibm,app4-dashboard,6,1
+pa11y,app1-apg-composition,24,1
+pa11y,app2-todomvc,12,1
+pa11y,app4-dashboard,18,1

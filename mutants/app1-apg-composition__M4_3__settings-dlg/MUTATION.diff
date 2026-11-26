@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app1-apg-composition/dist/app.js mutants/app1-apg-composition__M4_3__settings-dlg/dist/app.js
+--- seeds/app1-apg-composition/dist/app.js	2026-07-11 23:57:36
++++ mutants/app1-apg-composition__M4_3__settings-dlg/dist/app.js	2026-07-12 01:24:16
+@@ -60,7 +60,6 @@
+ }
+ function onDialogKeydown(e) {
+   if (e.key === "Escape") { e.preventDefault(); closeDialog(); } // @mut:M4.4:settings-dlg
+-  if (e.key === "Tab") trapFocus(e);                      // @mut:M4.3:settings-dlg
+ }
+ function trapFocus(e) {
+   const f = focusablesIn(dialog);

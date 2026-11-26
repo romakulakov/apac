@@ -1,0 +1,42 @@
+# All 36 accessibility mutation operators.
+# kind: ast | js | css       predicted: S | I | Q | mixed lists
+# sc: ground-truth WCAG 2.2 success criteria (strict-regime reference)
+# anchor_hint: starting point for anchoring.csv — VERIFY against the live
+#              W3C Techniques index before relying on it.
+
+M1.1: {name: div-ification of controls,        kind: ast, sc: ["4.1.2","2.1.1"], predicted: [S,I], anchor_hint: "F59"}
+M1.2: {name: widget role removal,              kind: ast, sc: ["4.1.2"],          predicted: [S],   anchor_hint: "4.1.2 failure: role absent on composite widget (APG)"}
+M1.3: {name: heading structure degradation,    kind: ast, sc: ["1.3.1","2.4.6"],  predicted: [S,Q], anchor_hint: "F2 (styled-p variant, verified) / F43 (level-scramble variant)"}
+M1.4: {name: list flattening,                  kind: ast, sc: ["1.3.1"],          predicted: [S],   anchor_hint: "H48-negation"}
+M1.5: {name: landmark removal,                 kind: ast, sc: ["1.3.1","2.4.1"],  predicted: [S],   anchor_hint: "ARIA11-negation"}
+M2.1: {name: label disassociation,             kind: ast, sc: ["1.3.1","4.1.2"],  predicted: [S],   anchor_hint: "F68"}
+M2.2: {name: alt removal (positive control),   kind: ast, sc: ["1.1.1"],          predicted: [S],   anchor_hint: "F65"}
+M2.3: {name: placeholder alt text,             kind: ast, sc: ["1.1.1"],          predicted: [Q],   anchor_hint: "F30"}
+M2.4: {name: generic link text,                kind: ast, sc: ["2.4.4"],          predicted: [Q],   anchor_hint: "F63/F84-adjacent"}
+M2.5: {name: label-in-name mismatch,           kind: ast, sc: ["2.5.3"],          predicted: [S,Q], anchor_hint: "F96"}
+M2.6: {name: unnamed icon control,             kind: ast, sc: ["4.1.2"],          predicted: [S],   anchor_hint: "F89-adjacent / 4.1.2 name failure"}
+M3.1: {name: frozen aria-expanded,             kind: js,  sc: ["4.1.2"],          predicted: [I],   anchor_hint: "4.1.2 failure: state not updated (F15-class)"}
+M3.2: {name: frozen selection state,           kind: js,  sc: ["4.1.2"],          predicted: [I],   anchor_hint: "4.1.2 failure: aria-checked/selected desync"}
+M3.3: {name: stale aria-hidden,                kind: js,  sc: ["1.3.1","4.1.2"],  predicted: [I],   anchor_hint: "F81-adjacent: content hidden from AT"}
+M3.4: {name: aria-modal without inertness,     kind: js,  sc: ["2.4.3"],          predicted: [I],   anchor_hint: "ARIA aria-modal + APG dialog (verified; F85 does not cover inertness)"}
+M4.1: {name: mouse-only widget,                kind: js,  sc: ["2.1.1"],          predicted: [I],   anchor_hint: "F54"}
+M4.2: {name: missing focus entry on open,      kind: js,  sc: ["2.4.3"],          predicted: [I],   anchor_hint: "F85"}
+M4.3: {name: missing focus containment,        kind: js,  sc: ["2.4.3"],          predicted: [I],   anchor_hint: "APG dialog Tab-containment must + 2.4.3 (verified; F85 covers entry/return only)"}
+M4.4: {name: missing escapability,             kind: js,  sc: ["2.1.2"],          predicted: [I],   anchor_hint: "WCAG 2.1.2 normative condition + APG dialog Escape must (verified; F10 is plugin/format traps only)"}
+M4.5: {name: missing focus restoration,        kind: js,  sc: ["2.4.3"],          predicted: [I],   anchor_hint: "F85"}
+M4.6: {name: positive tabindex injection,      kind: ast, sc: ["2.4.3"],          predicted: [S,I], anchor_hint: "F44"}
+M4.7: {name: focusability removal,             kind: ast, sc: ["2.1.1"],          predicted: [S,I], anchor_hint: "F55-adjacent"}
+M4.8: {name: broken roving tabindex,           kind: js,  sc: ["2.1.1"],          predicted: [I],   anchor_hint: "APG keyboard table 'must' clause for composite"}
+M5.1: {name: focus indicator suppression,      kind: css, sc: ["2.4.7"],          predicted: [S,I], anchor_hint: "F78"}
+M5.2: {name: contrast reduction (pos. ctrl),   kind: css, sc: ["1.4.3"],          predicted: [S],   anchor_hint: "F83/F24-class contrast failure"}
+M5.3: {name: target shrinkage,                 kind: css, sc: ["2.5.8"],          predicted: [S],   anchor_hint: "2.5.8 failure condition"}
+M5.4: {name: focus occlusion (sticky UI),      kind: css, sc: ["2.4.11"],         predicted: [I],   anchor_hint: "2.4.11 failure condition"}
+M5.5: {name: color-only state,                 kind: css, sc: ["1.4.1"],          predicted: [Q],   anchor_hint: "F73/F81"}
+M6.1: {name: silent status update,             kind: js,  sc: ["4.1.3"],          predicted: [I],   anchor_hint: "4.1.3 failure: status not programmatically determinable"}
+M6.2: {name: unmanaged route change,           kind: js,  sc: ["2.4.2","2.4.3"],  predicted: [I],   anchor_hint: "F25 (title) + APG focus-management practice"}
+M6.3: {name: unpausable auto-update,           kind: js,  sc: ["2.2.2"],          predicted: [I],   anchor_hint: "WCAG 2.2.2 auto-updating clause (verified; F16 is scrolling-specific)"}
+M6.4: {name: untamable hover content,          kind: js,  sc: ["1.4.13"],         predicted: [I],   anchor_hint: "WCAG 1.4.13 Dismissible condition (verified; F95 covers hoverability only)"}
+M7.1: {name: unassociated error text,          kind: ast, sc: ["3.3.1"],          predicted: [S,I], anchor_hint: "3.3.1 failure: error not programmatically associated"}
+M7.2: {name: visual-only required state,       kind: ast, sc: ["3.3.2"],          predicted: [S,Q], anchor_hint: "H90-negation"}
+M7.3: {name: autocomplete removal,             kind: ast, sc: ["1.3.5"],          predicted: [S],   anchor_hint: "H98-negation"}
+M7.4: {name: no focus-to-error on submit,      kind: js,  sc: ["3.3.1"],          predicted: [I],   anchor_hint: "APG/WAI form-error practice + F85-adjacent"}

@@ -1,0 +1,11 @@
+diff -ru --exclude=node_modules seeds/app4-dashboard/dist/styles.css mutants/app4-dashboard__M5_4__dash-footer-occlusion/dist/styles.css
+--- seeds/app4-dashboard/dist/styles.css	2026-07-12 01:23:43
++++ mutants/app4-dashboard__M5_4__dash-footer-occlusion/dist/styles.css	2026-07-12 01:24:18
+@@ -40,6 +40,6 @@
+           min-width: 22rem; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+ /* --- footer: non-occluding by default (SC 2.4.11) --- */
+ footer {
+-  position: static;            /* @mut:M5.4:dash-footer-occlusion */
++  position: fixed; inset: auto 0 0 0; height: 6rem; z-index: 50; /* @mut:M5.4:dash-footer-occlusion mutated */
+   background: #f0f0f0;
+ }

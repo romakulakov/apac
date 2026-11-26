@@ -1,0 +1,77 @@
+{
+  "tool": "axe",
+  "version": "4.12.1",
+  "target": "app1-apg-composition__M5_2__muted-contrast",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "openSettingsDialog",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "gotoForm",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoFormSubmitInvalid",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDash",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    },
+    {
+      "page": "/",
+      "staged": "gotoDashLoad",
+      "violations": [
+        {
+          "ruleId": "color-contrast",
+          "sc": [
+            "1.4.3"
+          ],
+          "nodes": 1
+        }
+      ]
+    }
+  ]
+}

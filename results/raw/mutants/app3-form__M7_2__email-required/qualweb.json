@@ -1,0 +1,27 @@
+{
+  "tool": "qualweb",
+  "version": "0.8.11",
+  "target": "app3-form__M7_2__email-required",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "formSubmitInvalid",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep2",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "formGotoStep3",
+      "violations": []
+    }
+  ]
+}

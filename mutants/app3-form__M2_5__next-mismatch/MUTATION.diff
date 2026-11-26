@@ -1,0 +1,142 @@
+diff -ru --exclude=node_modules seeds/app3-form/dist/index.html mutants/app3-form__M2_5__next-mismatch/dist/index.html
+--- seeds/app3-form/dist/index.html	2026-07-11 20:05:17
++++ mutants/app3-form__M2_5__next-mismatch/dist/index.html	2026-07-12 01:24:17
+@@ -1,109 +1,101 @@
+-<!doctype html>
+-<html lang="en">
+-<head>
+-  <meta charset="utf-8" />
+-  <meta name="viewport" content="width=device-width, initial-scale=1" />
++<!DOCTYPE html><html lang="en"><head>
++  <meta charset="utf-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Service signup — Step 1 of 3</title>
+-  <link rel="stylesheet" href="styles.css" />
++  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+   <a class="skip-link" href="#main">Skip to main content</a>
+ 
+-  <header><p class="brand"><img id="brand-logo" src="logo.svg" alt="Acme Services logo" width="36" height="36" /> Acme Services</p></header>
++  <header><p class="brand"><img id="brand-logo" src="logo.svg" alt="Acme Services logo" width="36" height="36"> Acme Services</p></header>
+ 
+   <main id="main" tabindex="-1">
+     <p id="progress" class="muted">Step <span id="step-num">1</span> of 3</p>
+     <div id="form-status" role="status" aria-live="polite"></div>
+ 
+     <!-- Error summary (GOV.UK pattern): focus target on invalid submit -->
+-    <div id="error-summary" role="alert" tabindex="-1" hidden>
++    <div id="error-summary" role="alert" tabindex="-1" hidden="">
+       <h2 id="err-heading">There is a problem</h2>
+       <ul id="err-list"></ul>
+     </div>
+ 
+-    <form id="wizard" novalidate>
++    <form id="wizard" novalidate="">
+ 
+       <!-- ============ STEP 1: personal ============ -->
+       <fieldset class="step" id="step-1" data-title="Service signup — Step 1 of 3">
+         <legend><h1 id="h-step-1" tabindex="-1">Your details</h1></legend>
+         <p>
+           <label for="full-name">Full name</label>
+-          <input id="full-name" name="full-name" type="text" autocomplete="name"
+-                 required aria-required="true" aria-describedby="full-name-err" />
+-          <span id="full-name-err" class="error" hidden>
++          <input id="full-name" name="full-name" type="text" autocomplete="name" required="" aria-required="true" aria-describedby="full-name-err">
++          <span id="full-name-err" class="error" hidden="">
+             <span class="err-icon" aria-hidden="true">⚠</span> Enter your full name.
+           </span>
+         </p>
+         <p>
+           <label for="email">Email address</label>
+-          <input id="email" name="email" type="email" autocomplete="email"
+-                 required aria-required="true" aria-describedby="email-hint email-err" />
++          <input id="email" name="email" type="email" autocomplete="email" required="" aria-required="true" aria-describedby="email-hint email-err">
+           <span id="email-hint" class="hint">We only use this to confirm your account.</span>
+-          <span id="email-err" class="error" hidden>
++          <span id="email-err" class="error" hidden="">
+             <span class="err-icon" aria-hidden="true">⚠</span> Enter a valid email address.
+           </span>
+         </p>
+         <p>
+           <label for="phone">Phone number (optional)</label>
+-          <input id="phone" name="phone" type="tel" autocomplete="tel"
+-                 aria-describedby="phone-err" />
+-          <span id="phone-err" class="error" hidden>
++          <input id="phone" name="phone" type="tel" autocomplete="tel" aria-describedby="phone-err">
++          <span id="phone-err" class="error" hidden="">
+             <span class="err-icon" aria-hidden="true">⚠</span> Enter a valid phone number.
+           </span>
+         </p>
+       </fieldset>
+ 
+       <!-- ============ STEP 2: address ============ -->
+-      <fieldset class="step" id="step-2" data-title="Service signup — Step 2 of 3" hidden>
++      <fieldset class="step" id="step-2" data-title="Service signup — Step 2 of 3" hidden="">
+         <legend><h1 id="h-step-2" tabindex="-1">Your address</h1></legend>
+         <p>
+           <label for="street">Street address</label>
+-          <input id="street" name="street" type="text" autocomplete="address-line1"
+-                 required aria-required="true" aria-describedby="street-err" />
+-          <span id="street-err" class="error" hidden>
++          <input id="street" name="street" type="text" autocomplete="address-line1" required="" aria-required="true" aria-describedby="street-err">
++          <span id="street-err" class="error" hidden="">
+             <span class="err-icon" aria-hidden="true">⚠</span> Enter your street address.
+           </span>
+         </p>
+         <p>
+           <label for="city">City</label>
+-          <input id="city" name="city" type="text" autocomplete="address-level2"
+-                 required aria-required="true" aria-describedby="city-err" />
+-          <span id="city-err" class="error" hidden>
++          <input id="city" name="city" type="text" autocomplete="address-level2" required="" aria-required="true" aria-describedby="city-err">
++          <span id="city-err" class="error" hidden="">
+             <span class="err-icon" aria-hidden="true">⚠</span> Enter your city.
+           </span>
+         </p>
+         <p>
+           <label for="postal">Postal code</label>
+-          <input id="postal" name="postal" type="text" autocomplete="postal-code"
+-                 required aria-required="true" aria-describedby="postal-err" class="short" />
+-          <span id="postal-err" class="error" hidden>
++          <input id="postal" name="postal" type="text" autocomplete="postal-code" required="" aria-required="true" aria-describedby="postal-err" class="short">
++          <span id="postal-err" class="error" hidden="">
+             <span class="err-icon" aria-hidden="true">⚠</span> Enter your postal code.
+           </span>
+         </p>
+       </fieldset>
+ 
+       <!-- ============ STEP 3: review ============ -->
+-      <fieldset class="step" id="step-3" data-title="Service signup — Step 3 of 3" hidden>
++      <fieldset class="step" id="step-3" data-title="Service signup — Step 3 of 3" hidden="">
+         <legend><h1 id="h-step-3" tabindex="-1">Check your answers</h1></legend>
+         <dl id="review"></dl>
+         <p>
+-          <input id="consent" name="consent" type="checkbox"
+-                 required aria-required="true" aria-describedby="consent-err" />
++          <input id="consent" name="consent" type="checkbox" required="" aria-required="true" aria-describedby="consent-err">
+           <label for="consent">I agree to the terms of service</label>
+-          <span id="consent-err" class="error" hidden>
++          <span id="consent-err" class="error" hidden="">
+             <span class="err-icon" aria-hidden="true">⚠</span> Confirm you agree to the terms.
+           </span>
+         </p>
+       </fieldset>
+ 
+       <p class="actions">
+-        <button type="button" id="back-btn" hidden>Back</button>
+-        <button type="submit" id="next-btn">Continue</button>
++        <button type="button" id="back-btn" hidden="">Back</button>
++        <button type="submit" id="next-btn" aria-label="Submit">Continue</button>
+       </p>
+     </form>
+   </main>
+ 
+   <footer><p class="muted">© Acme Services — benchmark seed application.</p></footer>
+   <script src="app.js"></script>
+-</body>
+-</html>
++
++
++</body></html>
+\ No newline at end of file

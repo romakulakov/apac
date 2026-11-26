@@ -1,0 +1,8 @@
+--- a/src/components/SettingsDialog.jsx
++++ b/src/components/SettingsDialog.jsx
+@@ example — regenerate against your real seed with:
+@@   git diff --no-index seeds/app1 mutated-copy > this.patch
+   const close = useCallback(() => {
+     setOpen(false);
+-    triggerRef.current?.focus();   // APaC T4 / SC 2.4.3 — REMOVED BY M4.5
+   }, []);

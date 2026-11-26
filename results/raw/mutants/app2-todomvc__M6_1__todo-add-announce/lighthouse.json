@@ -1,0 +1,27 @@
+{
+  "tool": "lighthouse",
+  "version": "13.4.0",
+  "target": "app2-todomvc__M6_1__todo-add-announce",
+  "results": [
+    {
+      "page": "/",
+      "staged": false,
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoAdd",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoToggleAll",
+      "violations": []
+    },
+    {
+      "page": "/",
+      "staged": "todoEdit",
+      "violations": []
+    }
+  ]
+}
